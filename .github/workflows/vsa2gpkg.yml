@@ -1,0 +1,40 @@
+name: vsa2gpkg
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1
+        with:
+          path: ~/.gradle/caches
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Build with Gradle
+        run: ./gradlew clean build
+      #   run: ./gradlew clean build dockerTest 
+      # - name: ls
+      #   #run: ./gradlew clean build pullDockerImage dockerTest --fail-fast -x test
+      #   run: ls -la build/libs/
+      #   env:
+      #     BUILD_NUMBER: ${{ env.GITHUB_RUN_NUMBER }}
+      # - name: Push docker image
+      #   run: |
+      #     export CI_JOB_TIMESTAMP=$(date +%Y%m%dT%H%M%S)
+      #     echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
+      #     docker images
+      #     ./gradlew pushDockerImages
+      #   if: ${{ github.ref == 'refs/heads/master' }}  
+      #   env:
+      #     DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+      #     DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
+      #     DOCKER_ACCOUNT: sogis
+      #     DOCKER_REPO: ili2gpkg-web-service
+      

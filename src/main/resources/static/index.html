@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>vsa2gpkg web service • Kanton Solothurn</title>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body {
+        }
+        .border-info {
+            border-color:rgba(0, 0, 0, 0.125)!important;
+            border-width:1px;
+        }
+        .card {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        #messages {
+            text-align: left;
+            width: 100%;
+            padding: 0px;
+            border: 0px solid black;
+            color: rgb(33, 37, 41);
+        }        
+		a {
+            color: rgb(33, 37, 41);
+            text-decoration: underline;
+		}          
+        a:link {
+            color: rgb(33, 37, 41);
+        }
+        a:visited {
+            color: rgb(33, 37, 41);
+        }
+        a:hover {
+            color: rgb(33, 37, 41);
+        }       
+        a:active {
+            color: rgb(33, 37, 41);
+        }  
+    </style>    
+
+</head>
+<body>
+    <div class="container">
+        <div style="padding-top:200px;">
+            <div class="row justify-content-sm-center">
+				<div class="col-sm-6 col-md-7">
+					<div class="custom-file mb-3">
+						<input type="file" class="custom-file-input" name="file" id="file" accept=".xtf,.xml,.itf"> 
+                        <label class="custom-file-label" for="file" id="fileLabel"></label>
+					</div>
+					<br /> 
+					<br />
+					<div class="mt-3">
+						<button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+					</div>
+                    <br /> 
+                    <br />
+                    <div id="messages" class="messages"></div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });            
+    });
+</script>
+
+<script>
+    const FILE_LABEL_TEXT = "Choose file";
+
+    (function() {
+        document.getElementById("fileLabel").innerHTML = FILE_LABEL_TEXT;
+
+    })();
+</script>
+
+<script>
+    const messageWindow = document.getElementById("messages");
+
+    const fileInput = document.getElementById("file");
+    const sendFileButton = document.getElementById("btnSubmit");
+    
+    const socket = new WebSocket(((window.location.protocol === "https:") ? "wss://" : "ws://") + window.location.host + window.location.pathname + "/socket");
+    socket.binaryType = "arraybuffer";
+
+    socket.onopen = function (event) {
+        addMessageToWindow("Connected");
+    };
+
+    socket.onmessage = function (event) {
+        if (event.data instanceof ArrayBuffer) {
+        } else {
+            addMessageToWindow(`${event.data}`);
+        }
+    };
+
+    sendFileButton.onclick = function (event) {    	
+    	var fileLabel = document.getElementById("fileLabel");
+        if (fileLabel.innerHTML == FILE_LABEL_TEXT) {
+        	return;
+        }    	
+
+        let file = fileInput.files[0];
+        
+        if (socket.readyState === WebSocket.CLOSED) {
+            addMessageToWindow("Connection closed. Refresh browser.");
+            return;
+        }
+        
+        // TODO: Wie kann man den Benutzer benachrichtigen, falls die Datei zu gross ist.
+        // Die Datei "verschwindet" bereits in Tomcat und kommt ja eben nicht bis zur
+        // Anwendung.
+        
+        // This works only if the handling on the server side is done synchronously. 
+        // Seems to work. Tested with large datasets.
+        sendMessage(file);
+        sendMessage(file.name);
+        fileInput.value = null;
+        
+        fileLabel.innerHTML = FILE_LABEL_TEXT;
+        document.getElementById("btnSubmit").disabled = true;
+    };
+
+    function sendMessage(message) {
+        socket.send(message);
+    }
+
+    function addMessageToWindow(message) {
+        messageWindow.innerHTML += `<div>${message}</div>`
+        
+        if (message.includes("...validation")) {
+        	document.getElementById("btnSubmit").disabled = false;
+        }
+    }
+</script>
+</html>
