@@ -14,12 +14,24 @@ targetCompatibility = '11'
 
 repositories {
     mavenCentral()
+    maven { url "http://jars.interlis.ch/" }
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    
+    implementation 'ch.interlis:ili2gpkg:4.4.5'
+    implementation 'ch.interlis:ilivalidator:1.11.9'
+    implementation 'ch.interlis:ili2c-core:5.1.5'
+    implementation 'ch.interlis:ili2c-tool:5.1.5'
+    implementation 'ch.interlis:iox-ili:1.21.4'
+    implementation 'org.xerial:sqlite-jdbc:3.8.11.2'    
+    
+    implementation 'commons-io:commons-io:2.8.0'  
+    implementation 'net.lingala.zip4j:zip4j:2.6.4'
+
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

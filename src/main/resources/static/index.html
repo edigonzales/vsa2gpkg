@@ -72,9 +72,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script>
+    var fileName;
+    
     $(document).ready(function () {
         $(".custom-file-input").on("change", function() {
-            var fileName = $(this).val().split("\\").pop();
+            fileName = $(this).val().split("\\").pop();
             $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
         });            
     });
@@ -104,6 +106,19 @@
 
     socket.onmessage = function (event) {
         if (event.data instanceof ArrayBuffer) {
+            // TODO: test with other browser (Desktop 2016)
+            let blob = new Blob([event.data], {
+                type: 'application/octet-stream'
+            });
+            
+            var link = document.createElement('a');
+            link.download = fileName.substring(0,fileName.length-4).concat(".zip");
+            let url = URL.createObjectURL(blob);
+            link.download = fileName.substring(0,fileName.length-4).concat(".zip");
+            link.href = url;
+            document.body.appendChild(link); // Needed for Firefox
+            link.click();
+            document.body.removeChild(link);
         } else {
             addMessageToWindow(`${event.data}`);
         }
@@ -143,7 +158,7 @@
     function addMessageToWindow(message) {
         messageWindow.innerHTML += `<div>${message}</div>`
         
-        if (message.includes("...validation")) {
+        if (message.includes("...import") || message.includes("error")) {
         	document.getElementById("btnSubmit").disabled = false;
         }
     }
