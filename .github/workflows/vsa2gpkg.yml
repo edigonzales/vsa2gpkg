@@ -19,7 +19,7 @@ jobs:
           java-version: 11
       - name: Build with Gradle
         run: ./gradlew clean build buildDockerImage pushDockerImages
-        if: ${{ github.ref == 'refs/heads/master' }}  
+        #if: ${{ github.ref == 'refs/heads/master' }}  
         env:
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
           DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
