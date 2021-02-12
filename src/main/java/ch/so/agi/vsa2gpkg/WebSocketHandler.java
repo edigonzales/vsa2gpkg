@@ -126,7 +126,6 @@ public class WebSocketHandler extends AbstractWebSocketHandler {
                     //sessionFileMap.remove(session.getId());
                     //return;
                 }
-                
             }
                 
             // Kopieren des vordefinierten QGIS-Projekt in die GeoPackage-Datei.
