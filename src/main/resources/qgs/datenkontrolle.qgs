@@ -1,0 +1,3279 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.16.1-Hannover" saveDateTime="2021-02-12T15:01:54" projectname="" saveUser="stefan" saveUserFull="Stefan Ziegler">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+      <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>47</srsid>
+      <srid>2056</srid>
+      <authid>EPSG:2056</authid>
+      <description>CH1903+ / LV95</description>
+      <projectionacronym>somerc</projectionacronym>
+      <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer patch_size="-1,-1" source="./VSADSSMINI2020.gpkg|layername=errorlog_error" legend_exp="" name="errorlog_error" providerKey="ogr" expanded="1" legend_split_behavior="0" checked="Qt::Unchecked" id="21_01_17_bdf_sew_dss20_Mini_errorlog_error_115c4af8_c475_40fc_9e40_11033c5bcd12">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer patch_size="-1,-1" source="./VSADSSMINI2020.gpkg|layername=vsadssmini_knoten_lage" legend_exp="" name="vsadssmini_knoten_lage" providerKey="ogr" expanded="1" legend_split_behavior="0" checked="Qt::Checked" id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_lage_cd597a8e_2d75_4897_8c4d_eba8f96d1bd5">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer patch_size="-1,-1" source="./VSADSSMINI2020.gpkg|layername=vsadssmini_leitung" legend_exp="" name="vsadssmini_leitung" providerKey="ogr" expanded="1" legend_split_behavior="0" checked="Qt::Checked" id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_leitung_4f03d63f_f018_4e47_a065_1bbc8cf3288a">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer patch_size="-1,-1" source="./VSADSSMINI2020.gpkg|layername=vsadssmini_knoten" legend_exp="" name="vsadssmini_knoten" providerKey="ogr" expanded="1" legend_split_behavior="0" checked="Qt::Unchecked" id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_c1b0ac8b_2bdc_4091_86ec_3cc2e64cfe6b">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer patch_size="-1,-1" source="./VSADSSMINI2020.gpkg|layername=vsadssmini_teileinzugsgebiet" legend_exp="" name="vsadssmini_teileinzugsgebiet" providerKey="ogr" expanded="1" legend_split_behavior="0" checked="Qt::Checked" id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_teileinzugsgebiet_be56cf87_5e16_4bd3_966b_8b8f29db3a02">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer patch_size="-1,-1" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=CPPT&amp;layers=TBBP&amp;layers=TBLI&amp;layers=MBSF&amp;layers=RESFPROJ&amp;layers=DPRSFPROJ&amp;layers=OSNRPROJ&amp;layers=OSBP&amp;layers=RESF&amp;layers=DPRSF&amp;layers=OSNR&amp;layers=LNNA&amp;layers=HADR&amp;layers=LOCPOS&amp;layers=SOPT&amp;layers=SOSF&amp;layers=SOLI&amp;layers=SOOBJ&amp;layers=LCSFPROJ&amp;layers=LCOBJ&amp;layers=LCSF&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;url=https://geodienste.ch/db/av_0/deu" legend_exp="" name="Bodenbedeckung schwarzweiss/BB_Nummern_Namen/ProjBodenbedeckung/EO_Nummern_Namen/Einzelobjekte (Linien)/Einzelobjekte (Flaechen)/Einzelobjekte (Punkte)/Lokalisationen/Gebaeudeadressen/Nomenklaturnamen/Liegenschaftsnummern/SDRechte/Liegenschaften/Grenzpunkte/ProjLiegenschaftsnummern/ProjSDRechte/ProjLiegenschaften/Gemeindegrenzen/Hoheitsgrenzabschnitte/Hoheitsgrenzpunkte/Fixpunkte" providerKey="wms" expanded="0" legend_split_behavior="0" checked="Qt::Checked" id="Bodenbedeckung_schwarzweiss_BB_Nummern_Namen_ProjBodenbedeckung_EO_Nummern_Namen_Einzelobjekte__Linien__Einzelobjekte__Flaechen__Einzelobjekte__Punkte__Lokalisationen_Gebaeudeadressen_Nomenklaturnamen_Liegenschaftsnummern_SDRechte_Liegenschaften_Grenzpunkte_ProjLiegenschaftsnummern_ProjSDRechte_ProjLiegenschaften_Gemeindegrenzen_Hoheitsgrenzabschnitte_Hoheitsgrenzpunkte_Fixpunkte_2d69b57c_b282_48d6_b089_f3f1fa9461d1">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>21_01_17_bdf_sew_dss20_Mini_errorlog_error_115c4af8_c475_40fc_9e40_11033c5bcd12</item>
+      <item>21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_c1b0ac8b_2bdc_4091_86ec_3cc2e64cfe6b</item>
+      <item>21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_lage_cd597a8e_2d75_4897_8c4d_eba8f96d1bd5</item>
+      <item>21_01_17_bdf_sew_dss20_Mini_vsadssmini_teileinzugsgebiet_be56cf87_5e16_4bd3_966b_8b8f29db3a02</item>
+      <item>21_01_17_bdf_sew_dss20_Mini_vsadssmini_leitung_4f03d63f_f018_4e47_a065_1bbc8cf3288a</item>
+      <item>Bodenbedeckung_schwarzweiss_BB_Nummern_Namen_ProjBodenbedeckung_EO_Nummern_Namen_Einzelobjekte__Linien__Einzelobjekte__Flaechen__Einzelobjekte__Punkte__Lokalisationen_Gebaeudeadressen_Nomenklaturnamen_Liegenschaftsnummern_SDRechte_Liegenschaften_Grenzpunkte_ProjLiegenschaftsnummern_ProjSDRechte_ProjLiegenschaften_Gemeindegrenzen_Hoheitsgrenzabschnitte_Hoheitsgrenzpunkte_Fixpunkte_2d69b57c_b282_48d6_b089_f3f1fa9461d1</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings minScale="0" enabled="0" unit="1" intersection-snapping="0" tolerance="12" maxScale="0" mode="2" self-snapping="0" scaleDependencyMode="0" type="1">
+    <individual-layer-settings>
+      <layer-setting minScale="0" enabled="0" tolerance="12" maxScale="0" units="1" id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_lage_cd597a8e_2d75_4897_8c4d_eba8f96d1bd5" type="1"/>
+      <layer-setting minScale="0" enabled="0" tolerance="12" maxScale="0" units="1" id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_leitung_4f03d63f_f018_4e47_a065_1bbc8cf3288a" type="1"/>
+      <layer-setting minScale="0" enabled="0" tolerance="12" maxScale="0" units="1" id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_c1b0ac8b_2bdc_4091_86ec_3cc2e64cfe6b" type="1"/>
+      <layer-setting minScale="0" enabled="0" tolerance="12" maxScale="0" units="1" id="21_01_17_bdf_sew_dss20_Mini_errorlog_error_115c4af8_c475_40fc_9e40_11033c5bcd12" type="1"/>
+      <layer-setting minScale="0" enabled="0" tolerance="12" maxScale="0" units="1" id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_teileinzugsgebiet_be56cf87_5e16_4bd3_966b_8b8f29db3a02" type="1"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>2471000</xmin>
+      <ymin>1064250</ymin>
+      <xmax>2849000</xmax>
+      <ymax>1305750</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+        <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer open="true" name="errorlog_error" checked="Qt::Unchecked" drawingOrder="-1" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="21_01_17_bdf_sew_dss20_Mini_errorlog_error_115c4af8_c475_40fc_9e40_11033c5bcd12" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" name="vsadssmini_knoten_lage" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_lage_cd597a8e_2d75_4897_8c4d_eba8f96d1bd5" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" name="vsadssmini_leitung" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="21_01_17_bdf_sew_dss20_Mini_vsadssmini_leitung_4f03d63f_f018_4e47_a065_1bbc8cf3288a" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" name="vsadssmini_knoten" checked="Qt::Unchecked" drawingOrder="-1" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_c1b0ac8b_2bdc_4091_86ec_3cc2e64cfe6b" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" name="vsadssmini_teileinzugsgebiet" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="21_01_17_bdf_sew_dss20_Mini_vsadssmini_teileinzugsgebiet_be56cf87_5e16_4bd3_966b_8b8f29db3a02" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="false" name="Bodenbedeckung schwarzweiss/BB_Nummern_Namen/ProjBodenbedeckung/EO_Nummern_Namen/Einzelobjekte (Linien)/Einzelobjekte (Flaechen)/Einzelobjekte (Punkte)/Lokalisationen/Gebaeudeadressen/Nomenklaturnamen/Liegenschaftsnummern/SDRechte/Liegenschaften/Grenzpunkte/ProjLiegenschaftsnummern/ProjSDRechte/ProjLiegenschaften/Gemeindegrenzen/Hoheitsgrenzabschnitte/Hoheitsgrenzpunkte/Fixpunkte" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Bodenbedeckung_schwarzweiss_BB_Nummern_Namen_ProjBodenbedeckung_EO_Nummern_Namen_Einzelobjekte__Linien__Einzelobjekte__Flaechen__Einzelobjekte__Punkte__Lokalisationen_Gebaeudeadressen_Nomenklaturnamen_Liegenschaftsnummern_SDRechte_Liegenschaften_Grenzpunkte_ProjLiegenschaftsnummern_ProjSDRechte_ProjLiegenschaften_Gemeindegrenzen_Hoheitsgrenzabschnitte_Hoheitsgrenzpunkte_Fixpunkte_2d69b57c_b282_48d6_b089_f3f1fa9461d1" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <main-annotation-layer refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" autoRefreshEnabled="0" autoRefreshTime="0" type="annotation">
+    <id>Annotations_0751aca1_b386_4db9_b105_ad7d2f43eaa6</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername>Annotations</layername>
+    <srs>
+      <spatialrefsys>
+        <wkt></wkt>
+        <proj4></proj4>
+        <srsid>0</srsid>
+        <srid>0</srid>
+        <authid></authid>
+        <description></description>
+        <projectionacronym></projectionacronym>
+        <ellipsoidacronym></ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <layerOpacity>1</layerOpacity>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer type="vector" autoRefreshTime="0" readOnly="0" wkbType="Point" labelsEnabled="0" autoRefreshEnabled="0" geometry="Point" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyDrawingTol="1" minScale="100000000" simplifyAlgorithm="0" simplifyMaxScale="1" maxScale="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingHints="0">
+      <extent>
+        <xmin>2673015.68000000016763806</xmin>
+        <ymin>1242872.2099999999627471</ymin>
+        <xmax>2678274.31999999983236194</xmax>
+        <ymax>1247148.26000000000931323</ymax>
+      </extent>
+      <id>21_01_17_bdf_sew_dss20_Mini_errorlog_error_115c4af8_c475_40fc_9e40_11033c5bcd12</id>
+      <datasource>./VSADSSMINI2020.gpkg|layername=errorlog_error</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>errorlog_error</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" minz="0" minx="0" maxx="0" crs="" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal startExpression="" durationField="" enabled="0" endExpression="" startField="" endField="" mode="0" durationUnit="min" fixedDuration="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol force_rhr="0" alpha="1" name="0" type="marker" clip_to_extent="1">
+            <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="3.8"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory minimumSize="0" width="15" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" backgroundAlpha="255" enabled="0" opacity="1" penColor="#000000" scaleBasedVisibility="0" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" minScaleDenominator="0" rotationOffset="270" showAxis="1" maxScaleDenominator="1e+08" backgroundColor="#ffffff" penAlpha="255" height="15" lineSizeType="MM" diagramOrientation="Up" spacingUnit="MM" sizeType="MM" penWidth="0" labelPlacementMethod="XHeight" spacing="5" sizeScale="3x:0,0,0,0,0,0">
+          <fontProperties description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" style=""/>
+          <axisSymbol>
+            <symbol force_rhr="0" alpha="1" name="" type="line" clip_to_extent="1">
+              <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" name="name" type="QString"/>
+                    <Option name="properties"/>
+                    <Option value="collection" name="type" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings priority="0" placement="0" obstacle="0" dist="0" showAll="1" linePlacementFlags="18" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="T_Id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_Ili_Tid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="message">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="atype">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="objtag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="tid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="techid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="userid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="iliqname">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="datasource">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="line">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="techdetails">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="T_Id"/>
+        <alias index="1" name="" field="T_Ili_Tid"/>
+        <alias index="2" name="" field="message"/>
+        <alias index="3" name="" field="atype"/>
+        <alias index="4" name="" field="objtag"/>
+        <alias index="5" name="" field="tid"/>
+        <alias index="6" name="" field="techid"/>
+        <alias index="7" name="" field="userid"/>
+        <alias index="8" name="" field="iliqname"/>
+        <alias index="9" name="" field="datasource"/>
+        <alias index="10" name="" field="line"/>
+        <alias index="11" name="" field="techdetails"/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="T_Id"/>
+        <default expression="" applyOnUpdate="0" field="T_Ili_Tid"/>
+        <default expression="" applyOnUpdate="0" field="message"/>
+        <default expression="" applyOnUpdate="0" field="atype"/>
+        <default expression="" applyOnUpdate="0" field="objtag"/>
+        <default expression="" applyOnUpdate="0" field="tid"/>
+        <default expression="" applyOnUpdate="0" field="techid"/>
+        <default expression="" applyOnUpdate="0" field="userid"/>
+        <default expression="" applyOnUpdate="0" field="iliqname"/>
+        <default expression="" applyOnUpdate="0" field="datasource"/>
+        <default expression="" applyOnUpdate="0" field="line"/>
+        <default expression="" applyOnUpdate="0" field="techdetails"/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" notnull_strength="1" field="T_Id" constraints="3" unique_strength="1"/>
+        <constraint exp_strength="0" notnull_strength="0" field="T_Ili_Tid" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="message" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="atype" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="objtag" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="tid" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="techid" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="userid" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="iliqname" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="datasource" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="line" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="techdetails" constraints="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="T_Id" desc="" exp=""/>
+        <constraint field="T_Ili_Tid" desc="" exp=""/>
+        <constraint field="message" desc="" exp=""/>
+        <constraint field="atype" desc="" exp=""/>
+        <constraint field="objtag" desc="" exp=""/>
+        <constraint field="tid" desc="" exp=""/>
+        <constraint field="techid" desc="" exp=""/>
+        <constraint field="userid" desc="" exp=""/>
+        <constraint field="iliqname" desc="" exp=""/>
+        <constraint field="datasource" desc="" exp=""/>
+        <constraint field="line" desc="" exp=""/>
+        <constraint field="techdetails" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column hidden="0" name="T_Id" width="-1" type="field"/>
+          <column hidden="0" name="T_Ili_Tid" width="-1" type="field"/>
+          <column hidden="0" name="message" width="-1" type="field"/>
+          <column hidden="0" name="atype" width="-1" type="field"/>
+          <column hidden="0" name="objtag" width="-1" type="field"/>
+          <column hidden="0" name="tid" width="-1" type="field"/>
+          <column hidden="0" name="techid" width="-1" type="field"/>
+          <column hidden="0" name="userid" width="-1" type="field"/>
+          <column hidden="0" name="iliqname" width="-1" type="field"/>
+          <column hidden="0" name="datasource" width="-1" type="field"/>
+          <column hidden="0" name="line" width="-1" type="field"/>
+          <column hidden="0" name="techdetails" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="T_Id"/>
+        <field editable="1" name="T_Ili_Tid"/>
+        <field editable="1" name="atype"/>
+        <field editable="1" name="datasource"/>
+        <field editable="1" name="iliqname"/>
+        <field editable="1" name="line"/>
+        <field editable="1" name="message"/>
+        <field editable="1" name="objtag"/>
+        <field editable="1" name="techdetails"/>
+        <field editable="1" name="techid"/>
+        <field editable="1" name="tid"/>
+        <field editable="1" name="userid"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="T_Id"/>
+        <field labelOnTop="0" name="T_Ili_Tid"/>
+        <field labelOnTop="0" name="atype"/>
+        <field labelOnTop="0" name="datasource"/>
+        <field labelOnTop="0" name="iliqname"/>
+        <field labelOnTop="0" name="line"/>
+        <field labelOnTop="0" name="message"/>
+        <field labelOnTop="0" name="objtag"/>
+        <field labelOnTop="0" name="techdetails"/>
+        <field labelOnTop="0" name="techid"/>
+        <field labelOnTop="0" name="tid"/>
+        <field labelOnTop="0" name="userid"/>
+      </labelOnTop>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"iliqname"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer type="vector" autoRefreshTime="0" readOnly="0" wkbType="Polygon" labelsEnabled="0" autoRefreshEnabled="0" geometry="Polygon" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyDrawingTol="1" minScale="100000000" simplifyAlgorithm="0" simplifyMaxScale="1" maxScale="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingHints="0">
+      <extent>
+        <xmin>2480000</xmin>
+        <ymin>1070000</ymin>
+        <xmax>2840000</xmax>
+        <ymax>1300000</ymax>
+      </extent>
+      <id>21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_c1b0ac8b_2bdc_4091_86ec_3cc2e64cfe6b</id>
+      <datasource>./VSADSSMINI2020.gpkg|layername=vsadssmini_knoten</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>vsadssmini_knoten</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal startExpression="" durationField="" enabled="0" endExpression="" startField="" endField="letzte_aenderung" mode="0" durationUnit="min" fixedDuration="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol force_rhr="0" alpha="1" name="0" type="fill" clip_to_extent="1">
+            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="243,166,178,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="T_Id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_Ili_Tid">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="ara_nr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="baujahr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="baulicherzustand">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="bemerkung">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="bezeichnung">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="deckelkote">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="dimension1">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="dimension2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="finanzierung">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="funktion">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="funktionhierarchisch">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="lagegenauigkeit">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nutzungsart_geplant">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nutzungsart_ist">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="obj_id_abwasserbauwerk">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="obj_id_deckel">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="rueckstaukote_ist">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sanierungsbedarf">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sohlenkote">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="astatus">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="symbolori">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="zugaenglichkeit">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="zustandserhebung_jahr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="betreiberref">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="eigentuemerref">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="datenherrref">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="datenlieferantref">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="letzte_aenderung">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="T_Id"/>
+        <alias index="1" name="" field="T_Ili_Tid"/>
+        <alias index="2" name="" field="ara_nr"/>
+        <alias index="3" name="" field="baujahr"/>
+        <alias index="4" name="" field="baulicherzustand"/>
+        <alias index="5" name="" field="bemerkung"/>
+        <alias index="6" name="" field="bezeichnung"/>
+        <alias index="7" name="" field="deckelkote"/>
+        <alias index="8" name="" field="dimension1"/>
+        <alias index="9" name="" field="dimension2"/>
+        <alias index="10" name="" field="finanzierung"/>
+        <alias index="11" name="" field="funktion"/>
+        <alias index="12" name="" field="funktionhierarchisch"/>
+        <alias index="13" name="" field="lagegenauigkeit"/>
+        <alias index="14" name="" field="nutzungsart_geplant"/>
+        <alias index="15" name="" field="nutzungsart_ist"/>
+        <alias index="16" name="" field="obj_id_abwasserbauwerk"/>
+        <alias index="17" name="" field="obj_id_deckel"/>
+        <alias index="18" name="" field="rueckstaukote_ist"/>
+        <alias index="19" name="" field="sanierungsbedarf"/>
+        <alias index="20" name="" field="sohlenkote"/>
+        <alias index="21" name="" field="astatus"/>
+        <alias index="22" name="" field="symbolori"/>
+        <alias index="23" name="" field="zugaenglichkeit"/>
+        <alias index="24" name="" field="zustandserhebung_jahr"/>
+        <alias index="25" name="" field="betreiberref"/>
+        <alias index="26" name="" field="eigentuemerref"/>
+        <alias index="27" name="" field="datenherrref"/>
+        <alias index="28" name="" field="datenlieferantref"/>
+        <alias index="29" name="" field="letzte_aenderung"/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="T_Id"/>
+        <default expression="" applyOnUpdate="0" field="T_Ili_Tid"/>
+        <default expression="" applyOnUpdate="0" field="ara_nr"/>
+        <default expression="" applyOnUpdate="0" field="baujahr"/>
+        <default expression="" applyOnUpdate="0" field="baulicherzustand"/>
+        <default expression="" applyOnUpdate="0" field="bemerkung"/>
+        <default expression="" applyOnUpdate="0" field="bezeichnung"/>
+        <default expression="" applyOnUpdate="0" field="deckelkote"/>
+        <default expression="" applyOnUpdate="0" field="dimension1"/>
+        <default expression="" applyOnUpdate="0" field="dimension2"/>
+        <default expression="" applyOnUpdate="0" field="finanzierung"/>
+        <default expression="" applyOnUpdate="0" field="funktion"/>
+        <default expression="" applyOnUpdate="0" field="funktionhierarchisch"/>
+        <default expression="" applyOnUpdate="0" field="lagegenauigkeit"/>
+        <default expression="" applyOnUpdate="0" field="nutzungsart_geplant"/>
+        <default expression="" applyOnUpdate="0" field="nutzungsart_ist"/>
+        <default expression="" applyOnUpdate="0" field="obj_id_abwasserbauwerk"/>
+        <default expression="" applyOnUpdate="0" field="obj_id_deckel"/>
+        <default expression="" applyOnUpdate="0" field="rueckstaukote_ist"/>
+        <default expression="" applyOnUpdate="0" field="sanierungsbedarf"/>
+        <default expression="" applyOnUpdate="0" field="sohlenkote"/>
+        <default expression="" applyOnUpdate="0" field="astatus"/>
+        <default expression="" applyOnUpdate="0" field="symbolori"/>
+        <default expression="" applyOnUpdate="0" field="zugaenglichkeit"/>
+        <default expression="" applyOnUpdate="0" field="zustandserhebung_jahr"/>
+        <default expression="" applyOnUpdate="0" field="betreiberref"/>
+        <default expression="" applyOnUpdate="0" field="eigentuemerref"/>
+        <default expression="" applyOnUpdate="0" field="datenherrref"/>
+        <default expression="" applyOnUpdate="0" field="datenlieferantref"/>
+        <default expression="" applyOnUpdate="0" field="letzte_aenderung"/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" notnull_strength="1" field="T_Id" constraints="3" unique_strength="1"/>
+        <constraint exp_strength="0" notnull_strength="0" field="T_Ili_Tid" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="ara_nr" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="baujahr" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="baulicherzustand" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="bemerkung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="bezeichnung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="deckelkote" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="dimension1" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="dimension2" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="finanzierung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="funktion" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="funktionhierarchisch" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="lagegenauigkeit" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="nutzungsart_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="nutzungsart_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="obj_id_abwasserbauwerk" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="obj_id_deckel" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="rueckstaukote_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="sanierungsbedarf" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="sohlenkote" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="astatus" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="symbolori" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="zugaenglichkeit" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="zustandserhebung_jahr" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="betreiberref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="eigentuemerref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="datenherrref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="datenlieferantref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="letzte_aenderung" constraints="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="T_Id" desc="" exp=""/>
+        <constraint field="T_Ili_Tid" desc="" exp=""/>
+        <constraint field="ara_nr" desc="" exp=""/>
+        <constraint field="baujahr" desc="" exp=""/>
+        <constraint field="baulicherzustand" desc="" exp=""/>
+        <constraint field="bemerkung" desc="" exp=""/>
+        <constraint field="bezeichnung" desc="" exp=""/>
+        <constraint field="deckelkote" desc="" exp=""/>
+        <constraint field="dimension1" desc="" exp=""/>
+        <constraint field="dimension2" desc="" exp=""/>
+        <constraint field="finanzierung" desc="" exp=""/>
+        <constraint field="funktion" desc="" exp=""/>
+        <constraint field="funktionhierarchisch" desc="" exp=""/>
+        <constraint field="lagegenauigkeit" desc="" exp=""/>
+        <constraint field="nutzungsart_geplant" desc="" exp=""/>
+        <constraint field="nutzungsart_ist" desc="" exp=""/>
+        <constraint field="obj_id_abwasserbauwerk" desc="" exp=""/>
+        <constraint field="obj_id_deckel" desc="" exp=""/>
+        <constraint field="rueckstaukote_ist" desc="" exp=""/>
+        <constraint field="sanierungsbedarf" desc="" exp=""/>
+        <constraint field="sohlenkote" desc="" exp=""/>
+        <constraint field="astatus" desc="" exp=""/>
+        <constraint field="symbolori" desc="" exp=""/>
+        <constraint field="zugaenglichkeit" desc="" exp=""/>
+        <constraint field="zustandserhebung_jahr" desc="" exp=""/>
+        <constraint field="betreiberref" desc="" exp=""/>
+        <constraint field="eigentuemerref" desc="" exp=""/>
+        <constraint field="datenherrref" desc="" exp=""/>
+        <constraint field="datenlieferantref" desc="" exp=""/>
+        <constraint field="letzte_aenderung" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer type="vector" autoRefreshTime="0" readOnly="0" wkbType="Point" labelsEnabled="0" autoRefreshEnabled="0" geometry="Point" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyDrawingTol="1" minScale="100000000" simplifyAlgorithm="0" simplifyMaxScale="1" maxScale="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingHints="0">
+      <extent>
+        <xmin>2480000</xmin>
+        <ymin>1070000</ymin>
+        <xmax>2840000</xmax>
+        <ymax>1300000</ymax>
+      </extent>
+      <id>21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_lage_cd597a8e_2d75_4897_8c4d_eba8f96d1bd5</id>
+      <datasource>./VSADSSMINI2020.gpkg|layername=vsadssmini_knoten_lage</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>vsadssmini_knoten_lage</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" minz="0" minx="0" maxx="0" crs="" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal startExpression="" durationField="" enabled="0" endExpression="" startField="" endField="" mode="0" durationUnit="min" fixedDuration="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol force_rhr="0" alpha="1" name="0" type="marker" clip_to_extent="1">
+            <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,255,255,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="102,0,102,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="2"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="Pixel"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="3"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory minimumSize="0" width="15" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" backgroundAlpha="255" enabled="0" opacity="1" penColor="#000000" scaleBasedVisibility="0" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" minScaleDenominator="0" rotationOffset="270" showAxis="1" maxScaleDenominator="1e+08" backgroundColor="#ffffff" penAlpha="255" height="15" lineSizeType="MM" diagramOrientation="Up" spacingUnit="MM" sizeType="MM" penWidth="0" labelPlacementMethod="XHeight" spacing="5" sizeScale="3x:0,0,0,0,0,0">
+          <fontProperties description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" style=""/>
+          <axisSymbol>
+            <symbol force_rhr="0" alpha="1" name="" type="line" clip_to_extent="1">
+              <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" name="name" type="QString"/>
+                    <Option name="properties"/>
+                    <Option value="collection" name="type" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings priority="0" placement="0" obstacle="0" dist="0" showAll="1" linePlacementFlags="18" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="T_Id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="T_Id"/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="T_Id"/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" notnull_strength="1" field="T_Id" constraints="3" unique_strength="1"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="T_Id" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column hidden="0" name="T_Id" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="T_Id"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="T_Id"/>
+      </labelOnTop>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"T_Id"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer type="vector" autoRefreshTime="0" readOnly="0" wkbType="LineString" labelsEnabled="0" autoRefreshEnabled="0" geometry="Line" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyDrawingTol="1" minScale="100000000" simplifyAlgorithm="0" simplifyMaxScale="1" maxScale="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingHints="0">
+      <extent>
+        <xmin>2480000</xmin>
+        <ymin>1070000</ymin>
+        <xmax>2840000</xmax>
+        <ymax>1300000</ymax>
+      </extent>
+      <id>21_01_17_bdf_sew_dss20_Mini_vsadssmini_leitung_4f03d63f_f018_4e47_a065_1bbc8cf3288a</id>
+      <datasource>./VSADSSMINI2020.gpkg|layername=vsadssmini_leitung</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>vsadssmini_leitung</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" minz="0" minx="0" maxx="0" crs="" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal startExpression="" durationField="" enabled="0" endExpression="" startField="" endField="letzte_aenderung" mode="0" durationUnit="min" fixedDuration="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol force_rhr="0" alpha="1" name="0" type="line" clip_to_extent="1">
+            <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+              <prop k="align_dash_pattern" v="0"/>
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="Pixel"/>
+              <prop k="dash_pattern_offset" v="0"/>
+              <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="dash_pattern_offset_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="102,0,102,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="4"/>
+              <prop k="line_width_unit" v="Pixel"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="Pixel"/>
+              <prop k="ring_filter" v="0"/>
+              <prop k="tweak_dash_pattern_on_corners" v="0"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory minimumSize="0" width="15" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" backgroundAlpha="255" enabled="0" opacity="1" penColor="#000000" scaleBasedVisibility="0" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" minScaleDenominator="0" rotationOffset="270" showAxis="1" maxScaleDenominator="1e+08" backgroundColor="#ffffff" penAlpha="255" height="15" lineSizeType="MM" diagramOrientation="Up" spacingUnit="MM" sizeType="MM" penWidth="0" labelPlacementMethod="XHeight" spacing="5" sizeScale="3x:0,0,0,0,0,0">
+          <fontProperties description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" style=""/>
+          <axisSymbol>
+            <symbol force_rhr="0" alpha="1" name="" type="line" clip_to_extent="1">
+              <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" name="name" type="QString"/>
+                    <Option name="properties"/>
+                    <Option value="collection" name="type" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings priority="0" placement="2" obstacle="0" dist="0" showAll="1" linePlacementFlags="18" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="T_Id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_Ili_Tid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="baujahr">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="baulicherzustand">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="bemerkung">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="bezeichnung">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="finanzierung">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="funktionhierarchisch">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="funktionhydraulisch">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="hoehengenauigkeit_nach">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="hoehengenauigkeit_von">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="hydr_belastung_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="kote_nach">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="kote_von">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="laengeeffektiv">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="lagebestimmung">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="leckschutz">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="lichte_breite">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="lichte_hoehe">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="material">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nutzungsart_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nutzungsart_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="obj_id_abwasserbauwerk">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="obj_id_nachhaltungspunkt">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="obj_id_vonhaltungspunkt">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="profiltyp">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="reliner_art">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="reliner_nennweite">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sanierungsbedarf">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="astatus">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="wandrauhigkeit">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="wbw_basisjahr">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="wbw_bauart">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="wiederbeschaffungswert">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="zustandserhebung_jahr">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="betreiberref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="eigentuemerref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="knoten_nachref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="knoten_vonref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="leitung_nachref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="rohrprofilref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="datenherrref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="datenlieferantref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="letzte_aenderung">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="T_Id"/>
+        <alias index="1" name="" field="T_Ili_Tid"/>
+        <alias index="2" name="" field="baujahr"/>
+        <alias index="3" name="" field="baulicherzustand"/>
+        <alias index="4" name="" field="bemerkung"/>
+        <alias index="5" name="" field="bezeichnung"/>
+        <alias index="6" name="" field="finanzierung"/>
+        <alias index="7" name="" field="funktionhierarchisch"/>
+        <alias index="8" name="" field="funktionhydraulisch"/>
+        <alias index="9" name="" field="hoehengenauigkeit_nach"/>
+        <alias index="10" name="" field="hoehengenauigkeit_von"/>
+        <alias index="11" name="" field="hydr_belastung_ist"/>
+        <alias index="12" name="" field="kote_nach"/>
+        <alias index="13" name="" field="kote_von"/>
+        <alias index="14" name="" field="laengeeffektiv"/>
+        <alias index="15" name="" field="lagebestimmung"/>
+        <alias index="16" name="" field="leckschutz"/>
+        <alias index="17" name="" field="lichte_breite"/>
+        <alias index="18" name="" field="lichte_hoehe"/>
+        <alias index="19" name="" field="material"/>
+        <alias index="20" name="" field="nutzungsart_geplant"/>
+        <alias index="21" name="" field="nutzungsart_ist"/>
+        <alias index="22" name="" field="obj_id_abwasserbauwerk"/>
+        <alias index="23" name="" field="obj_id_nachhaltungspunkt"/>
+        <alias index="24" name="" field="obj_id_vonhaltungspunkt"/>
+        <alias index="25" name="" field="profiltyp"/>
+        <alias index="26" name="" field="reliner_art"/>
+        <alias index="27" name="" field="reliner_nennweite"/>
+        <alias index="28" name="" field="sanierungsbedarf"/>
+        <alias index="29" name="" field="astatus"/>
+        <alias index="30" name="" field="wandrauhigkeit"/>
+        <alias index="31" name="" field="wbw_basisjahr"/>
+        <alias index="32" name="" field="wbw_bauart"/>
+        <alias index="33" name="" field="wiederbeschaffungswert"/>
+        <alias index="34" name="" field="zustandserhebung_jahr"/>
+        <alias index="35" name="" field="betreiberref"/>
+        <alias index="36" name="" field="eigentuemerref"/>
+        <alias index="37" name="" field="knoten_nachref"/>
+        <alias index="38" name="" field="knoten_vonref"/>
+        <alias index="39" name="" field="leitung_nachref"/>
+        <alias index="40" name="" field="rohrprofilref"/>
+        <alias index="41" name="" field="datenherrref"/>
+        <alias index="42" name="" field="datenlieferantref"/>
+        <alias index="43" name="" field="letzte_aenderung"/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="T_Id"/>
+        <default expression="" applyOnUpdate="0" field="T_Ili_Tid"/>
+        <default expression="" applyOnUpdate="0" field="baujahr"/>
+        <default expression="" applyOnUpdate="0" field="baulicherzustand"/>
+        <default expression="" applyOnUpdate="0" field="bemerkung"/>
+        <default expression="" applyOnUpdate="0" field="bezeichnung"/>
+        <default expression="" applyOnUpdate="0" field="finanzierung"/>
+        <default expression="" applyOnUpdate="0" field="funktionhierarchisch"/>
+        <default expression="" applyOnUpdate="0" field="funktionhydraulisch"/>
+        <default expression="" applyOnUpdate="0" field="hoehengenauigkeit_nach"/>
+        <default expression="" applyOnUpdate="0" field="hoehengenauigkeit_von"/>
+        <default expression="" applyOnUpdate="0" field="hydr_belastung_ist"/>
+        <default expression="" applyOnUpdate="0" field="kote_nach"/>
+        <default expression="" applyOnUpdate="0" field="kote_von"/>
+        <default expression="" applyOnUpdate="0" field="laengeeffektiv"/>
+        <default expression="" applyOnUpdate="0" field="lagebestimmung"/>
+        <default expression="" applyOnUpdate="0" field="leckschutz"/>
+        <default expression="" applyOnUpdate="0" field="lichte_breite"/>
+        <default expression="" applyOnUpdate="0" field="lichte_hoehe"/>
+        <default expression="" applyOnUpdate="0" field="material"/>
+        <default expression="" applyOnUpdate="0" field="nutzungsart_geplant"/>
+        <default expression="" applyOnUpdate="0" field="nutzungsart_ist"/>
+        <default expression="" applyOnUpdate="0" field="obj_id_abwasserbauwerk"/>
+        <default expression="" applyOnUpdate="0" field="obj_id_nachhaltungspunkt"/>
+        <default expression="" applyOnUpdate="0" field="obj_id_vonhaltungspunkt"/>
+        <default expression="" applyOnUpdate="0" field="profiltyp"/>
+        <default expression="" applyOnUpdate="0" field="reliner_art"/>
+        <default expression="" applyOnUpdate="0" field="reliner_nennweite"/>
+        <default expression="" applyOnUpdate="0" field="sanierungsbedarf"/>
+        <default expression="" applyOnUpdate="0" field="astatus"/>
+        <default expression="" applyOnUpdate="0" field="wandrauhigkeit"/>
+        <default expression="" applyOnUpdate="0" field="wbw_basisjahr"/>
+        <default expression="" applyOnUpdate="0" field="wbw_bauart"/>
+        <default expression="" applyOnUpdate="0" field="wiederbeschaffungswert"/>
+        <default expression="" applyOnUpdate="0" field="zustandserhebung_jahr"/>
+        <default expression="" applyOnUpdate="0" field="betreiberref"/>
+        <default expression="" applyOnUpdate="0" field="eigentuemerref"/>
+        <default expression="" applyOnUpdate="0" field="knoten_nachref"/>
+        <default expression="" applyOnUpdate="0" field="knoten_vonref"/>
+        <default expression="" applyOnUpdate="0" field="leitung_nachref"/>
+        <default expression="" applyOnUpdate="0" field="rohrprofilref"/>
+        <default expression="" applyOnUpdate="0" field="datenherrref"/>
+        <default expression="" applyOnUpdate="0" field="datenlieferantref"/>
+        <default expression="" applyOnUpdate="0" field="letzte_aenderung"/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" notnull_strength="1" field="T_Id" constraints="3" unique_strength="1"/>
+        <constraint exp_strength="0" notnull_strength="0" field="T_Ili_Tid" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="baujahr" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="baulicherzustand" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="bemerkung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="bezeichnung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="finanzierung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="funktionhierarchisch" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="funktionhydraulisch" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="hoehengenauigkeit_nach" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="hoehengenauigkeit_von" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="hydr_belastung_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="kote_nach" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="kote_von" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="laengeeffektiv" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="lagebestimmung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="leckschutz" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="lichte_breite" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="lichte_hoehe" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="material" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="nutzungsart_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="nutzungsart_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="obj_id_abwasserbauwerk" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="obj_id_nachhaltungspunkt" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="obj_id_vonhaltungspunkt" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="profiltyp" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="reliner_art" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="reliner_nennweite" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="sanierungsbedarf" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="astatus" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="wandrauhigkeit" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="wbw_basisjahr" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="wbw_bauart" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="wiederbeschaffungswert" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="zustandserhebung_jahr" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="betreiberref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="eigentuemerref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="knoten_nachref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="knoten_vonref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="leitung_nachref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="rohrprofilref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="datenherrref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="datenlieferantref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="letzte_aenderung" constraints="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="T_Id" desc="" exp=""/>
+        <constraint field="T_Ili_Tid" desc="" exp=""/>
+        <constraint field="baujahr" desc="" exp=""/>
+        <constraint field="baulicherzustand" desc="" exp=""/>
+        <constraint field="bemerkung" desc="" exp=""/>
+        <constraint field="bezeichnung" desc="" exp=""/>
+        <constraint field="finanzierung" desc="" exp=""/>
+        <constraint field="funktionhierarchisch" desc="" exp=""/>
+        <constraint field="funktionhydraulisch" desc="" exp=""/>
+        <constraint field="hoehengenauigkeit_nach" desc="" exp=""/>
+        <constraint field="hoehengenauigkeit_von" desc="" exp=""/>
+        <constraint field="hydr_belastung_ist" desc="" exp=""/>
+        <constraint field="kote_nach" desc="" exp=""/>
+        <constraint field="kote_von" desc="" exp=""/>
+        <constraint field="laengeeffektiv" desc="" exp=""/>
+        <constraint field="lagebestimmung" desc="" exp=""/>
+        <constraint field="leckschutz" desc="" exp=""/>
+        <constraint field="lichte_breite" desc="" exp=""/>
+        <constraint field="lichte_hoehe" desc="" exp=""/>
+        <constraint field="material" desc="" exp=""/>
+        <constraint field="nutzungsart_geplant" desc="" exp=""/>
+        <constraint field="nutzungsart_ist" desc="" exp=""/>
+        <constraint field="obj_id_abwasserbauwerk" desc="" exp=""/>
+        <constraint field="obj_id_nachhaltungspunkt" desc="" exp=""/>
+        <constraint field="obj_id_vonhaltungspunkt" desc="" exp=""/>
+        <constraint field="profiltyp" desc="" exp=""/>
+        <constraint field="reliner_art" desc="" exp=""/>
+        <constraint field="reliner_nennweite" desc="" exp=""/>
+        <constraint field="sanierungsbedarf" desc="" exp=""/>
+        <constraint field="astatus" desc="" exp=""/>
+        <constraint field="wandrauhigkeit" desc="" exp=""/>
+        <constraint field="wbw_basisjahr" desc="" exp=""/>
+        <constraint field="wbw_bauart" desc="" exp=""/>
+        <constraint field="wiederbeschaffungswert" desc="" exp=""/>
+        <constraint field="zustandserhebung_jahr" desc="" exp=""/>
+        <constraint field="betreiberref" desc="" exp=""/>
+        <constraint field="eigentuemerref" desc="" exp=""/>
+        <constraint field="knoten_nachref" desc="" exp=""/>
+        <constraint field="knoten_vonref" desc="" exp=""/>
+        <constraint field="leitung_nachref" desc="" exp=""/>
+        <constraint field="rohrprofilref" desc="" exp=""/>
+        <constraint field="datenherrref" desc="" exp=""/>
+        <constraint field="datenlieferantref" desc="" exp=""/>
+        <constraint field="letzte_aenderung" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column hidden="0" name="T_Id" width="-1" type="field"/>
+          <column hidden="0" name="T_Ili_Tid" width="-1" type="field"/>
+          <column hidden="0" name="baujahr" width="-1" type="field"/>
+          <column hidden="0" name="baulicherzustand" width="-1" type="field"/>
+          <column hidden="0" name="bemerkung" width="-1" type="field"/>
+          <column hidden="0" name="bezeichnung" width="-1" type="field"/>
+          <column hidden="0" name="finanzierung" width="-1" type="field"/>
+          <column hidden="0" name="funktionhierarchisch" width="-1" type="field"/>
+          <column hidden="0" name="funktionhydraulisch" width="-1" type="field"/>
+          <column hidden="0" name="hoehengenauigkeit_nach" width="-1" type="field"/>
+          <column hidden="0" name="hoehengenauigkeit_von" width="-1" type="field"/>
+          <column hidden="0" name="hydr_belastung_ist" width="-1" type="field"/>
+          <column hidden="0" name="kote_nach" width="-1" type="field"/>
+          <column hidden="0" name="kote_von" width="-1" type="field"/>
+          <column hidden="0" name="laengeeffektiv" width="-1" type="field"/>
+          <column hidden="0" name="lagebestimmung" width="-1" type="field"/>
+          <column hidden="0" name="leckschutz" width="-1" type="field"/>
+          <column hidden="0" name="lichte_breite" width="-1" type="field"/>
+          <column hidden="0" name="lichte_hoehe" width="-1" type="field"/>
+          <column hidden="0" name="material" width="-1" type="field"/>
+          <column hidden="0" name="nutzungsart_geplant" width="-1" type="field"/>
+          <column hidden="0" name="nutzungsart_ist" width="-1" type="field"/>
+          <column hidden="0" name="obj_id_abwasserbauwerk" width="-1" type="field"/>
+          <column hidden="0" name="obj_id_nachhaltungspunkt" width="-1" type="field"/>
+          <column hidden="0" name="obj_id_vonhaltungspunkt" width="-1" type="field"/>
+          <column hidden="0" name="profiltyp" width="-1" type="field"/>
+          <column hidden="0" name="reliner_art" width="-1" type="field"/>
+          <column hidden="0" name="reliner_nennweite" width="-1" type="field"/>
+          <column hidden="0" name="sanierungsbedarf" width="-1" type="field"/>
+          <column hidden="0" name="astatus" width="-1" type="field"/>
+          <column hidden="0" name="wandrauhigkeit" width="-1" type="field"/>
+          <column hidden="0" name="wbw_basisjahr" width="-1" type="field"/>
+          <column hidden="0" name="wbw_bauart" width="-1" type="field"/>
+          <column hidden="0" name="wiederbeschaffungswert" width="-1" type="field"/>
+          <column hidden="0" name="zustandserhebung_jahr" width="-1" type="field"/>
+          <column hidden="0" name="betreiberref" width="-1" type="field"/>
+          <column hidden="0" name="eigentuemerref" width="-1" type="field"/>
+          <column hidden="0" name="knoten_nachref" width="-1" type="field"/>
+          <column hidden="0" name="knoten_vonref" width="-1" type="field"/>
+          <column hidden="0" name="leitung_nachref" width="-1" type="field"/>
+          <column hidden="0" name="rohrprofilref" width="-1" type="field"/>
+          <column hidden="0" name="datenherrref" width="-1" type="field"/>
+          <column hidden="0" name="datenlieferantref" width="-1" type="field"/>
+          <column hidden="0" name="letzte_aenderung" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="T_Id"/>
+        <field editable="1" name="T_Ili_Tid"/>
+        <field editable="1" name="astatus"/>
+        <field editable="1" name="baujahr"/>
+        <field editable="1" name="baulicherzustand"/>
+        <field editable="1" name="bemerkung"/>
+        <field editable="1" name="betreiberref"/>
+        <field editable="1" name="bezeichnung"/>
+        <field editable="1" name="datenherrref"/>
+        <field editable="1" name="datenlieferantref"/>
+        <field editable="1" name="eigentuemerref"/>
+        <field editable="1" name="finanzierung"/>
+        <field editable="1" name="funktionhierarchisch"/>
+        <field editable="1" name="funktionhydraulisch"/>
+        <field editable="1" name="hoehengenauigkeit_nach"/>
+        <field editable="1" name="hoehengenauigkeit_von"/>
+        <field editable="1" name="hydr_belastung_ist"/>
+        <field editable="1" name="knoten_nachref"/>
+        <field editable="1" name="knoten_vonref"/>
+        <field editable="1" name="kote_nach"/>
+        <field editable="1" name="kote_von"/>
+        <field editable="1" name="laengeeffektiv"/>
+        <field editable="1" name="lagebestimmung"/>
+        <field editable="1" name="leckschutz"/>
+        <field editable="1" name="leitung_nachref"/>
+        <field editable="1" name="letzte_aenderung"/>
+        <field editable="1" name="lichte_breite"/>
+        <field editable="1" name="lichte_hoehe"/>
+        <field editable="1" name="material"/>
+        <field editable="1" name="nutzungsart_geplant"/>
+        <field editable="1" name="nutzungsart_ist"/>
+        <field editable="1" name="obj_id_abwasserbauwerk"/>
+        <field editable="1" name="obj_id_nachhaltungspunkt"/>
+        <field editable="1" name="obj_id_vonhaltungspunkt"/>
+        <field editable="1" name="profiltyp"/>
+        <field editable="1" name="reliner_art"/>
+        <field editable="1" name="reliner_nennweite"/>
+        <field editable="1" name="rohrprofilref"/>
+        <field editable="1" name="sanierungsbedarf"/>
+        <field editable="1" name="wandrauhigkeit"/>
+        <field editable="1" name="wbw_basisjahr"/>
+        <field editable="1" name="wbw_bauart"/>
+        <field editable="1" name="wiederbeschaffungswert"/>
+        <field editable="1" name="zustandserhebung_jahr"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="T_Id"/>
+        <field labelOnTop="0" name="T_Ili_Tid"/>
+        <field labelOnTop="0" name="astatus"/>
+        <field labelOnTop="0" name="baujahr"/>
+        <field labelOnTop="0" name="baulicherzustand"/>
+        <field labelOnTop="0" name="bemerkung"/>
+        <field labelOnTop="0" name="betreiberref"/>
+        <field labelOnTop="0" name="bezeichnung"/>
+        <field labelOnTop="0" name="datenherrref"/>
+        <field labelOnTop="0" name="datenlieferantref"/>
+        <field labelOnTop="0" name="eigentuemerref"/>
+        <field labelOnTop="0" name="finanzierung"/>
+        <field labelOnTop="0" name="funktionhierarchisch"/>
+        <field labelOnTop="0" name="funktionhydraulisch"/>
+        <field labelOnTop="0" name="hoehengenauigkeit_nach"/>
+        <field labelOnTop="0" name="hoehengenauigkeit_von"/>
+        <field labelOnTop="0" name="hydr_belastung_ist"/>
+        <field labelOnTop="0" name="knoten_nachref"/>
+        <field labelOnTop="0" name="knoten_vonref"/>
+        <field labelOnTop="0" name="kote_nach"/>
+        <field labelOnTop="0" name="kote_von"/>
+        <field labelOnTop="0" name="laengeeffektiv"/>
+        <field labelOnTop="0" name="lagebestimmung"/>
+        <field labelOnTop="0" name="leckschutz"/>
+        <field labelOnTop="0" name="leitung_nachref"/>
+        <field labelOnTop="0" name="letzte_aenderung"/>
+        <field labelOnTop="0" name="lichte_breite"/>
+        <field labelOnTop="0" name="lichte_hoehe"/>
+        <field labelOnTop="0" name="material"/>
+        <field labelOnTop="0" name="nutzungsart_geplant"/>
+        <field labelOnTop="0" name="nutzungsart_ist"/>
+        <field labelOnTop="0" name="obj_id_abwasserbauwerk"/>
+        <field labelOnTop="0" name="obj_id_nachhaltungspunkt"/>
+        <field labelOnTop="0" name="obj_id_vonhaltungspunkt"/>
+        <field labelOnTop="0" name="profiltyp"/>
+        <field labelOnTop="0" name="reliner_art"/>
+        <field labelOnTop="0" name="reliner_nennweite"/>
+        <field labelOnTop="0" name="rohrprofilref"/>
+        <field labelOnTop="0" name="sanierungsbedarf"/>
+        <field labelOnTop="0" name="wandrauhigkeit"/>
+        <field labelOnTop="0" name="wbw_basisjahr"/>
+        <field labelOnTop="0" name="wbw_bauart"/>
+        <field labelOnTop="0" name="wiederbeschaffungswert"/>
+        <field labelOnTop="0" name="zustandserhebung_jahr"/>
+      </labelOnTop>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"T_Id"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer type="vector" autoRefreshTime="0" readOnly="0" wkbType="Polygon" labelsEnabled="0" autoRefreshEnabled="0" geometry="Polygon" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyDrawingTol="1" minScale="100000000" simplifyAlgorithm="0" simplifyMaxScale="1" maxScale="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingHints="0">
+      <extent>
+        <xmin>2480000</xmin>
+        <ymin>1070000</ymin>
+        <xmax>2840000</xmax>
+        <ymax>1300000</ymax>
+      </extent>
+      <id>21_01_17_bdf_sew_dss20_Mini_vsadssmini_teileinzugsgebiet_be56cf87_5e16_4bd3_966b_8b8f29db3a02</id>
+      <datasource>./VSADSSMINI2020.gpkg|layername=vsadssmini_teileinzugsgebiet</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>vsadssmini_teileinzugsgebiet</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" minz="0" minx="0" maxx="0" crs="" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal startExpression="" durationField="" enabled="0" endExpression="" startField="" endField="letzte_aenderung" mode="0" durationUnit="min" fixedDuration="0" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol force_rhr="0" alpha="1" name="0" type="fill" clip_to_extent="1">
+            <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+              <prop k="align_dash_pattern" v="0"/>
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="dash_pattern_offset" v="0"/>
+              <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="dash_pattern_offset_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="238,104,0,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="4"/>
+              <prop k="line_width_unit" v="Pixel"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="ring_filter" v="0"/>
+              <prop k="tweak_dash_pattern_on_corners" v="0"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory minimumSize="0" width="15" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" backgroundAlpha="255" enabled="0" opacity="1" penColor="#000000" scaleBasedVisibility="0" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" minScaleDenominator="0" rotationOffset="270" showAxis="1" maxScaleDenominator="1e+08" backgroundColor="#ffffff" penAlpha="255" height="15" lineSizeType="MM" diagramOrientation="Up" spacingUnit="MM" sizeType="MM" penWidth="0" labelPlacementMethod="XHeight" spacing="5" sizeScale="3x:0,0,0,0,0,0">
+          <fontProperties description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" style=""/>
+          <axisSymbol>
+            <symbol force_rhr="0" alpha="1" name="" type="line" clip_to_extent="1">
+              <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" name="name" type="QString"/>
+                    <Option name="properties"/>
+                    <Option value="collection" name="type" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings priority="0" placement="1" obstacle="0" dist="0" showAll="1" linePlacementFlags="18" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration type="Map">
+          <Option name="QgsGeometryGapCheck" type="Map">
+            <Option value="0" name="allowedGapsBuffer" type="double"/>
+            <Option value="false" name="allowedGapsEnabled" type="bool"/>
+            <Option value="" name="allowedGapsLayer" type="QString"/>
+          </Option>
+        </checkConfiguration>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="T_Id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_Ili_Tid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="abflussbegrenzung_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="abflussbegrenzung_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="abflussbeiwert_rw_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="abflussbeiwert_rw_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="abflussbeiwert_sw_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="abflussbeiwert_sw_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="befestigungsgrad_rw_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="befestigungsgrad_rw_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="befestigungsgrad_sw_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="befestigungsgrad_sw_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="bemerkung">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="bezeichnung">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="direkteinleitung_in_gewaesser_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="direkteinleitung_in_gewaesser_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="einwohnerdichte_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="einwohnerdichte_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="entwaesserungssystem_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="entwaesserungssystem_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="flaeche">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="fremdwasseranfall_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="fremdwasseranfall_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="retention_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="retention_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="schmutzabwasseranfall_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="schmutzabwasseranfall_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="versickerung_geplant">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="versickerung_ist">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="knoten_rw_istref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="knoten_rw_geplantref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="knoten_sw_istref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="knoten_sw_geplantref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sbw_rw_istref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sbw_rw_geplantref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sbw_sw_istref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sbw_sw_geplantref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="datenherrref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="datenlieferantref">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="letzte_aenderung">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="T_Id"/>
+        <alias index="1" name="" field="T_Ili_Tid"/>
+        <alias index="2" name="" field="abflussbegrenzung_geplant"/>
+        <alias index="3" name="" field="abflussbegrenzung_ist"/>
+        <alias index="4" name="" field="abflussbeiwert_rw_geplant"/>
+        <alias index="5" name="" field="abflussbeiwert_rw_ist"/>
+        <alias index="6" name="" field="abflussbeiwert_sw_geplant"/>
+        <alias index="7" name="" field="abflussbeiwert_sw_ist"/>
+        <alias index="8" name="" field="befestigungsgrad_rw_geplant"/>
+        <alias index="9" name="" field="befestigungsgrad_rw_ist"/>
+        <alias index="10" name="" field="befestigungsgrad_sw_geplant"/>
+        <alias index="11" name="" field="befestigungsgrad_sw_ist"/>
+        <alias index="12" name="" field="bemerkung"/>
+        <alias index="13" name="" field="bezeichnung"/>
+        <alias index="14" name="" field="direkteinleitung_in_gewaesser_geplant"/>
+        <alias index="15" name="" field="direkteinleitung_in_gewaesser_ist"/>
+        <alias index="16" name="" field="einwohnerdichte_geplant"/>
+        <alias index="17" name="" field="einwohnerdichte_ist"/>
+        <alias index="18" name="" field="entwaesserungssystem_geplant"/>
+        <alias index="19" name="" field="entwaesserungssystem_ist"/>
+        <alias index="20" name="" field="flaeche"/>
+        <alias index="21" name="" field="fremdwasseranfall_geplant"/>
+        <alias index="22" name="" field="fremdwasseranfall_ist"/>
+        <alias index="23" name="" field="retention_geplant"/>
+        <alias index="24" name="" field="retention_ist"/>
+        <alias index="25" name="" field="schmutzabwasseranfall_geplant"/>
+        <alias index="26" name="" field="schmutzabwasseranfall_ist"/>
+        <alias index="27" name="" field="versickerung_geplant"/>
+        <alias index="28" name="" field="versickerung_ist"/>
+        <alias index="29" name="" field="knoten_rw_istref"/>
+        <alias index="30" name="" field="knoten_rw_geplantref"/>
+        <alias index="31" name="" field="knoten_sw_istref"/>
+        <alias index="32" name="" field="knoten_sw_geplantref"/>
+        <alias index="33" name="" field="sbw_rw_istref"/>
+        <alias index="34" name="" field="sbw_rw_geplantref"/>
+        <alias index="35" name="" field="sbw_sw_istref"/>
+        <alias index="36" name="" field="sbw_sw_geplantref"/>
+        <alias index="37" name="" field="datenherrref"/>
+        <alias index="38" name="" field="datenlieferantref"/>
+        <alias index="39" name="" field="letzte_aenderung"/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="T_Id"/>
+        <default expression="" applyOnUpdate="0" field="T_Ili_Tid"/>
+        <default expression="" applyOnUpdate="0" field="abflussbegrenzung_geplant"/>
+        <default expression="" applyOnUpdate="0" field="abflussbegrenzung_ist"/>
+        <default expression="" applyOnUpdate="0" field="abflussbeiwert_rw_geplant"/>
+        <default expression="" applyOnUpdate="0" field="abflussbeiwert_rw_ist"/>
+        <default expression="" applyOnUpdate="0" field="abflussbeiwert_sw_geplant"/>
+        <default expression="" applyOnUpdate="0" field="abflussbeiwert_sw_ist"/>
+        <default expression="" applyOnUpdate="0" field="befestigungsgrad_rw_geplant"/>
+        <default expression="" applyOnUpdate="0" field="befestigungsgrad_rw_ist"/>
+        <default expression="" applyOnUpdate="0" field="befestigungsgrad_sw_geplant"/>
+        <default expression="" applyOnUpdate="0" field="befestigungsgrad_sw_ist"/>
+        <default expression="" applyOnUpdate="0" field="bemerkung"/>
+        <default expression="" applyOnUpdate="0" field="bezeichnung"/>
+        <default expression="" applyOnUpdate="0" field="direkteinleitung_in_gewaesser_geplant"/>
+        <default expression="" applyOnUpdate="0" field="direkteinleitung_in_gewaesser_ist"/>
+        <default expression="" applyOnUpdate="0" field="einwohnerdichte_geplant"/>
+        <default expression="" applyOnUpdate="0" field="einwohnerdichte_ist"/>
+        <default expression="" applyOnUpdate="0" field="entwaesserungssystem_geplant"/>
+        <default expression="" applyOnUpdate="0" field="entwaesserungssystem_ist"/>
+        <default expression="" applyOnUpdate="0" field="flaeche"/>
+        <default expression="" applyOnUpdate="0" field="fremdwasseranfall_geplant"/>
+        <default expression="" applyOnUpdate="0" field="fremdwasseranfall_ist"/>
+        <default expression="" applyOnUpdate="0" field="retention_geplant"/>
+        <default expression="" applyOnUpdate="0" field="retention_ist"/>
+        <default expression="" applyOnUpdate="0" field="schmutzabwasseranfall_geplant"/>
+        <default expression="" applyOnUpdate="0" field="schmutzabwasseranfall_ist"/>
+        <default expression="" applyOnUpdate="0" field="versickerung_geplant"/>
+        <default expression="" applyOnUpdate="0" field="versickerung_ist"/>
+        <default expression="" applyOnUpdate="0" field="knoten_rw_istref"/>
+        <default expression="" applyOnUpdate="0" field="knoten_rw_geplantref"/>
+        <default expression="" applyOnUpdate="0" field="knoten_sw_istref"/>
+        <default expression="" applyOnUpdate="0" field="knoten_sw_geplantref"/>
+        <default expression="" applyOnUpdate="0" field="sbw_rw_istref"/>
+        <default expression="" applyOnUpdate="0" field="sbw_rw_geplantref"/>
+        <default expression="" applyOnUpdate="0" field="sbw_sw_istref"/>
+        <default expression="" applyOnUpdate="0" field="sbw_sw_geplantref"/>
+        <default expression="" applyOnUpdate="0" field="datenherrref"/>
+        <default expression="" applyOnUpdate="0" field="datenlieferantref"/>
+        <default expression="" applyOnUpdate="0" field="letzte_aenderung"/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" notnull_strength="1" field="T_Id" constraints="3" unique_strength="1"/>
+        <constraint exp_strength="0" notnull_strength="0" field="T_Ili_Tid" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="abflussbegrenzung_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="abflussbegrenzung_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="abflussbeiwert_rw_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="abflussbeiwert_rw_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="abflussbeiwert_sw_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="abflussbeiwert_sw_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="befestigungsgrad_rw_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="befestigungsgrad_rw_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="befestigungsgrad_sw_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="befestigungsgrad_sw_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="bemerkung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="bezeichnung" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="direkteinleitung_in_gewaesser_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="direkteinleitung_in_gewaesser_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="einwohnerdichte_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="einwohnerdichte_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="entwaesserungssystem_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="entwaesserungssystem_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="flaeche" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="fremdwasseranfall_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="fremdwasseranfall_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="retention_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="retention_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="schmutzabwasseranfall_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="schmutzabwasseranfall_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="versickerung_geplant" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="versickerung_ist" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="knoten_rw_istref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="knoten_rw_geplantref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="knoten_sw_istref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="knoten_sw_geplantref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="sbw_rw_istref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="sbw_rw_geplantref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="sbw_sw_istref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="sbw_sw_geplantref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="datenherrref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="datenlieferantref" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="letzte_aenderung" constraints="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="T_Id" desc="" exp=""/>
+        <constraint field="T_Ili_Tid" desc="" exp=""/>
+        <constraint field="abflussbegrenzung_geplant" desc="" exp=""/>
+        <constraint field="abflussbegrenzung_ist" desc="" exp=""/>
+        <constraint field="abflussbeiwert_rw_geplant" desc="" exp=""/>
+        <constraint field="abflussbeiwert_rw_ist" desc="" exp=""/>
+        <constraint field="abflussbeiwert_sw_geplant" desc="" exp=""/>
+        <constraint field="abflussbeiwert_sw_ist" desc="" exp=""/>
+        <constraint field="befestigungsgrad_rw_geplant" desc="" exp=""/>
+        <constraint field="befestigungsgrad_rw_ist" desc="" exp=""/>
+        <constraint field="befestigungsgrad_sw_geplant" desc="" exp=""/>
+        <constraint field="befestigungsgrad_sw_ist" desc="" exp=""/>
+        <constraint field="bemerkung" desc="" exp=""/>
+        <constraint field="bezeichnung" desc="" exp=""/>
+        <constraint field="direkteinleitung_in_gewaesser_geplant" desc="" exp=""/>
+        <constraint field="direkteinleitung_in_gewaesser_ist" desc="" exp=""/>
+        <constraint field="einwohnerdichte_geplant" desc="" exp=""/>
+        <constraint field="einwohnerdichte_ist" desc="" exp=""/>
+        <constraint field="entwaesserungssystem_geplant" desc="" exp=""/>
+        <constraint field="entwaesserungssystem_ist" desc="" exp=""/>
+        <constraint field="flaeche" desc="" exp=""/>
+        <constraint field="fremdwasseranfall_geplant" desc="" exp=""/>
+        <constraint field="fremdwasseranfall_ist" desc="" exp=""/>
+        <constraint field="retention_geplant" desc="" exp=""/>
+        <constraint field="retention_ist" desc="" exp=""/>
+        <constraint field="schmutzabwasseranfall_geplant" desc="" exp=""/>
+        <constraint field="schmutzabwasseranfall_ist" desc="" exp=""/>
+        <constraint field="versickerung_geplant" desc="" exp=""/>
+        <constraint field="versickerung_ist" desc="" exp=""/>
+        <constraint field="knoten_rw_istref" desc="" exp=""/>
+        <constraint field="knoten_rw_geplantref" desc="" exp=""/>
+        <constraint field="knoten_sw_istref" desc="" exp=""/>
+        <constraint field="knoten_sw_geplantref" desc="" exp=""/>
+        <constraint field="sbw_rw_istref" desc="" exp=""/>
+        <constraint field="sbw_rw_geplantref" desc="" exp=""/>
+        <constraint field="sbw_sw_istref" desc="" exp=""/>
+        <constraint field="sbw_sw_geplantref" desc="" exp=""/>
+        <constraint field="datenherrref" desc="" exp=""/>
+        <constraint field="datenlieferantref" desc="" exp=""/>
+        <constraint field="letzte_aenderung" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column hidden="0" name="T_Id" width="-1" type="field"/>
+          <column hidden="0" name="T_Ili_Tid" width="-1" type="field"/>
+          <column hidden="0" name="abflussbegrenzung_geplant" width="-1" type="field"/>
+          <column hidden="0" name="abflussbegrenzung_ist" width="-1" type="field"/>
+          <column hidden="0" name="abflussbeiwert_rw_geplant" width="-1" type="field"/>
+          <column hidden="0" name="abflussbeiwert_rw_ist" width="-1" type="field"/>
+          <column hidden="0" name="abflussbeiwert_sw_geplant" width="-1" type="field"/>
+          <column hidden="0" name="abflussbeiwert_sw_ist" width="-1" type="field"/>
+          <column hidden="0" name="befestigungsgrad_rw_geplant" width="-1" type="field"/>
+          <column hidden="0" name="befestigungsgrad_rw_ist" width="-1" type="field"/>
+          <column hidden="0" name="befestigungsgrad_sw_geplant" width="-1" type="field"/>
+          <column hidden="0" name="befestigungsgrad_sw_ist" width="-1" type="field"/>
+          <column hidden="0" name="bemerkung" width="-1" type="field"/>
+          <column hidden="0" name="bezeichnung" width="-1" type="field"/>
+          <column hidden="0" name="direkteinleitung_in_gewaesser_geplant" width="-1" type="field"/>
+          <column hidden="0" name="direkteinleitung_in_gewaesser_ist" width="-1" type="field"/>
+          <column hidden="0" name="einwohnerdichte_geplant" width="-1" type="field"/>
+          <column hidden="0" name="einwohnerdichte_ist" width="-1" type="field"/>
+          <column hidden="0" name="entwaesserungssystem_geplant" width="-1" type="field"/>
+          <column hidden="0" name="entwaesserungssystem_ist" width="-1" type="field"/>
+          <column hidden="0" name="flaeche" width="-1" type="field"/>
+          <column hidden="0" name="fremdwasseranfall_geplant" width="-1" type="field"/>
+          <column hidden="0" name="fremdwasseranfall_ist" width="-1" type="field"/>
+          <column hidden="0" name="retention_geplant" width="-1" type="field"/>
+          <column hidden="0" name="retention_ist" width="-1" type="field"/>
+          <column hidden="0" name="schmutzabwasseranfall_geplant" width="-1" type="field"/>
+          <column hidden="0" name="schmutzabwasseranfall_ist" width="-1" type="field"/>
+          <column hidden="0" name="versickerung_geplant" width="-1" type="field"/>
+          <column hidden="0" name="versickerung_ist" width="-1" type="field"/>
+          <column hidden="0" name="knoten_rw_istref" width="-1" type="field"/>
+          <column hidden="0" name="knoten_rw_geplantref" width="-1" type="field"/>
+          <column hidden="0" name="knoten_sw_istref" width="-1" type="field"/>
+          <column hidden="0" name="knoten_sw_geplantref" width="-1" type="field"/>
+          <column hidden="0" name="sbw_rw_istref" width="-1" type="field"/>
+          <column hidden="0" name="sbw_rw_geplantref" width="-1" type="field"/>
+          <column hidden="0" name="sbw_sw_istref" width="-1" type="field"/>
+          <column hidden="0" name="sbw_sw_geplantref" width="-1" type="field"/>
+          <column hidden="0" name="datenherrref" width="-1" type="field"/>
+          <column hidden="0" name="datenlieferantref" width="-1" type="field"/>
+          <column hidden="0" name="letzte_aenderung" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="T_Id"/>
+        <field editable="1" name="T_Ili_Tid"/>
+        <field editable="1" name="abflussbegrenzung_geplant"/>
+        <field editable="1" name="abflussbegrenzung_ist"/>
+        <field editable="1" name="abflussbeiwert_rw_geplant"/>
+        <field editable="1" name="abflussbeiwert_rw_ist"/>
+        <field editable="1" name="abflussbeiwert_sw_geplant"/>
+        <field editable="1" name="abflussbeiwert_sw_ist"/>
+        <field editable="1" name="befestigungsgrad_rw_geplant"/>
+        <field editable="1" name="befestigungsgrad_rw_ist"/>
+        <field editable="1" name="befestigungsgrad_sw_geplant"/>
+        <field editable="1" name="befestigungsgrad_sw_ist"/>
+        <field editable="1" name="bemerkung"/>
+        <field editable="1" name="bezeichnung"/>
+        <field editable="1" name="datenherrref"/>
+        <field editable="1" name="datenlieferantref"/>
+        <field editable="1" name="direkteinleitung_in_gewaesser_geplant"/>
+        <field editable="1" name="direkteinleitung_in_gewaesser_ist"/>
+        <field editable="1" name="einwohnerdichte_geplant"/>
+        <field editable="1" name="einwohnerdichte_ist"/>
+        <field editable="1" name="entwaesserungssystem_geplant"/>
+        <field editable="1" name="entwaesserungssystem_ist"/>
+        <field editable="1" name="flaeche"/>
+        <field editable="1" name="fremdwasseranfall_geplant"/>
+        <field editable="1" name="fremdwasseranfall_ist"/>
+        <field editable="1" name="knoten_rw_geplantref"/>
+        <field editable="1" name="knoten_rw_istref"/>
+        <field editable="1" name="knoten_sw_geplantref"/>
+        <field editable="1" name="knoten_sw_istref"/>
+        <field editable="1" name="letzte_aenderung"/>
+        <field editable="1" name="retention_geplant"/>
+        <field editable="1" name="retention_ist"/>
+        <field editable="1" name="sbw_rw_geplantref"/>
+        <field editable="1" name="sbw_rw_istref"/>
+        <field editable="1" name="sbw_sw_geplantref"/>
+        <field editable="1" name="sbw_sw_istref"/>
+        <field editable="1" name="schmutzabwasseranfall_geplant"/>
+        <field editable="1" name="schmutzabwasseranfall_ist"/>
+        <field editable="1" name="versickerung_geplant"/>
+        <field editable="1" name="versickerung_ist"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="T_Id"/>
+        <field labelOnTop="0" name="T_Ili_Tid"/>
+        <field labelOnTop="0" name="abflussbegrenzung_geplant"/>
+        <field labelOnTop="0" name="abflussbegrenzung_ist"/>
+        <field labelOnTop="0" name="abflussbeiwert_rw_geplant"/>
+        <field labelOnTop="0" name="abflussbeiwert_rw_ist"/>
+        <field labelOnTop="0" name="abflussbeiwert_sw_geplant"/>
+        <field labelOnTop="0" name="abflussbeiwert_sw_ist"/>
+        <field labelOnTop="0" name="befestigungsgrad_rw_geplant"/>
+        <field labelOnTop="0" name="befestigungsgrad_rw_ist"/>
+        <field labelOnTop="0" name="befestigungsgrad_sw_geplant"/>
+        <field labelOnTop="0" name="befestigungsgrad_sw_ist"/>
+        <field labelOnTop="0" name="bemerkung"/>
+        <field labelOnTop="0" name="bezeichnung"/>
+        <field labelOnTop="0" name="datenherrref"/>
+        <field labelOnTop="0" name="datenlieferantref"/>
+        <field labelOnTop="0" name="direkteinleitung_in_gewaesser_geplant"/>
+        <field labelOnTop="0" name="direkteinleitung_in_gewaesser_ist"/>
+        <field labelOnTop="0" name="einwohnerdichte_geplant"/>
+        <field labelOnTop="0" name="einwohnerdichte_ist"/>
+        <field labelOnTop="0" name="entwaesserungssystem_geplant"/>
+        <field labelOnTop="0" name="entwaesserungssystem_ist"/>
+        <field labelOnTop="0" name="flaeche"/>
+        <field labelOnTop="0" name="fremdwasseranfall_geplant"/>
+        <field labelOnTop="0" name="fremdwasseranfall_ist"/>
+        <field labelOnTop="0" name="knoten_rw_geplantref"/>
+        <field labelOnTop="0" name="knoten_rw_istref"/>
+        <field labelOnTop="0" name="knoten_sw_geplantref"/>
+        <field labelOnTop="0" name="knoten_sw_istref"/>
+        <field labelOnTop="0" name="letzte_aenderung"/>
+        <field labelOnTop="0" name="retention_geplant"/>
+        <field labelOnTop="0" name="retention_ist"/>
+        <field labelOnTop="0" name="sbw_rw_geplantref"/>
+        <field labelOnTop="0" name="sbw_rw_istref"/>
+        <field labelOnTop="0" name="sbw_sw_geplantref"/>
+        <field labelOnTop="0" name="sbw_sw_istref"/>
+        <field labelOnTop="0" name="schmutzabwasseranfall_geplant"/>
+        <field labelOnTop="0" name="schmutzabwasseranfall_ist"/>
+        <field labelOnTop="0" name="versickerung_geplant"/>
+        <field labelOnTop="0" name="versickerung_ist"/>
+      </labelOnTop>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"T_Id"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" minScale="1e+08" autoRefreshEnabled="0" maxScale="0" styleCategories="AllStyleCategories" autoRefreshTime="0" type="raster">
+      <extent>
+        <xmin>2470000</xmin>
+        <ymin>1070000</ymin>
+        <xmax>2840000</xmax>
+        <ymax>1300000</ymax>
+      </extent>
+      <id>Bodenbedeckung_schwarzweiss_BB_Nummern_Namen_ProjBodenbedeckung_EO_Nummern_Namen_Einzelobjekte__Linien__Einzelobjekte__Flaechen__Einzelobjekte__Punkte__Lokalisationen_Gebaeudeadressen_Nomenklaturnamen_Liegenschaftsnummern_SDRechte_Liegenschaften_Grenzpunkte_ProjLiegenschaftsnummern_ProjSDRechte_ProjLiegenschaften_Gemeindegrenzen_Hoheitsgrenzabschnitte_Hoheitsgrenzpunkte_Fixpunkte_2d69b57c_b282_48d6_b089_f3f1fa9461d1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=CPPT&amp;layers=TBBP&amp;layers=TBLI&amp;layers=MBSF&amp;layers=RESFPROJ&amp;layers=DPRSFPROJ&amp;layers=OSNRPROJ&amp;layers=OSBP&amp;layers=RESF&amp;layers=DPRSF&amp;layers=OSNR&amp;layers=LNNA&amp;layers=HADR&amp;layers=LOCPOS&amp;layers=SOPT&amp;layers=SOSF&amp;layers=SOLI&amp;layers=SOOBJ&amp;layers=LCSFPROJ&amp;layers=LCOBJ&amp;layers=LCSF&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;styles&amp;url=https://geodienste.ch/db/av_0/deu</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Bodenbedeckung schwarzweiss/BB_Nummern_Namen/ProjBodenbedeckung/EO_Nummern_Namen/Einzelobjekte (Linien)/Einzelobjekte (Flaechen)/Einzelobjekte (Punkte)/Lokalisationen/Gebaeudeadressen/Nomenklaturnamen/Liegenschaftsnummern/SDRechte/Liegenschaften/Grenzpunkte/ProjLiegenschaftsnummern/ProjSDRechte/ProjLiegenschaften/Gemeindegrenzen/Hoheitsgrenzabschnitte/Hoheitsgrenzpunkte/Fixpunkte</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" minz="0" minx="0" maxx="0" crs="" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider>wms</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal enabled="0" mode="0" fetchMode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <property value="false" key="WMSBackgroundLayer"/>
+        <property value="false" key="WMSPublishDataSourceUrl"/>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property value="Feature" key="identify/format"/>
+      </customproperties>
+      <pipe>
+        <provider>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" enabled="false" maxOversampling="2" zoomedInResamplingMethod="nearestNeighbour"/>
+        </provider>
+        <rasterrenderer nodataColor="" band="1" opacity="0.668" alphaBand="-1" type="singlebandcolordata">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
+        <huesaturation grayscaleMode="0" saturation="0" colorizeOn="0" colorizeBlue="128" colorizeGreen="128" colorizeRed="255" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+        <resamplingStage>resamplingFilter</resamplingStage>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="21_01_17_bdf_sew_dss20_Mini_errorlog_error_115c4af8_c475_40fc_9e40_11033c5bcd12"/>
+    <layer id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_c1b0ac8b_2bdc_4091_86ec_3cc2e64cfe6b"/>
+    <layer id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_knoten_lage_cd597a8e_2d75_4897_8c4d_eba8f96d1bd5"/>
+    <layer id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_teileinzugsgebiet_be56cf87_5e16_4bd3_966b_8b8f29db3a02"/>
+    <layer id="21_01_17_bdf_sew_dss20_Mini_vsadssmini_leitung_4f03d63f_f018_4e47_a065_1bbc8cf3288a"/>
+    <layer id="Bodenbedeckung_schwarzweiss_BB_Nummern_Namen_ProjBodenbedeckung_EO_Nummern_Namen_Einzelobjekte__Linien__Einzelobjekte__Flaechen__Einzelobjekte__Punkte__Lokalisationen_Gebaeudeadressen_Nomenklaturnamen_Liegenschaftsnummern_SDRechte_Liegenschaften_Grenzpunkte_ProjLiegenschaftsnummern_ProjSDRechte_ProjLiegenschaften_Gemeindegrenzen_Hoheitsgrenzabschnitte_Hoheitsgrenzpunkte_Fixpunkte_2d69b57c_b282_48d6_b089_f3f1fa9461d1"/>
+  </layerorder>
+  <properties>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Measure>
+      <Ellipsoid type="QString">EPSG:7004</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">1</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option value="" name="name" type="QString"/>
+      <Option name="properties"/>
+      <Option value="collection" name="type" type="QString"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author>Stefan Ziegler</author>
+    <creation>2021-02-12T14:32:57</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+    <DefaultViewExtent ymin="1039474.2345033606979996" xmax="2849000" ymax="1330525.7654966393020004" xmin="2471000">
+      <spatialrefsys>
+        <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+        <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
+  </ProjectViewSettings>
+  <ProjectTimeSettings cumulativeTemporalRange="0" timeStep="1" timeStepUnit="h" frameRate="1"/>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option value="" name="decimal_separator" type="QChar"/>
+        <Option value="6" name="decimals" type="int"/>
+        <Option value="0" name="direction_format" type="int"/>
+        <Option value="0" name="rounding_type" type="int"/>
+        <Option value="false" name="show_plus" type="bool"/>
+        <Option value="true" name="show_thousand_separator" type="bool"/>
+        <Option value="false" name="show_trailing_zeros" type="bool"/>
+        <Option value="" name="thousand_separator" type="QChar"/>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
+</qgis>

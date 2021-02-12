@@ -2,7 +2,8 @@ plugins {
     id 'org.springframework.boot' version '2.4.2'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
-    id "net.nemerosa.versioning" version "2.14.0"   
+    id "net.nemerosa.versioning" version "2.14.0"
+    id "com.bmuschko.docker-remote-api" version "6.7.0"    
 }
 
 apply from: "$rootDir/gradle/versioning.gradle"
@@ -39,3 +40,108 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+import com.bmuschko.gradle.docker.tasks.image.Dockerfile
+import com.bmuschko.gradle.docker.tasks.image.DockerPullImage
+import com.bmuschko.gradle.docker.tasks.image.DockerBuildImage
+import com.bmuschko.gradle.docker.tasks.image.DockerPushImage
+import com.bmuschko.gradle.docker.tasks.container.DockerCreateContainer
+import com.bmuschko.gradle.docker.tasks.container.DockerStartContainer
+import com.bmuschko.gradle.docker.tasks.container.DockerLogsContainer
+import com.bmuschko.gradle.docker.tasks.container.DockerStopContainer
+import com.bmuschko.gradle.docker.tasks.container.DockerCreateContainer.ExposedPort
+import java.text.SimpleDateFormat
+
+docker {
+    registryCredentials {
+        username = System.env.DOCKER_USERNAME
+        password = System.env.DOCKER_PASSWORD
+    }
+}
+
+task pullDockerImage(type: DockerPullImage) {
+    description = "Pull docker image."
+    image = "sogis/vsa2gpkg-web-service:latest"
+}
+
+task buildDockerImage(dependsOn: 'pullDockerImage', type: DockerBuildImage) {
+    description = "Build docker image."
+    inputDir = project.rootDir
+    cacheFrom.add("sogis/vsa2gpkg-web-service:latest")    
+    images.add("sogis/vsa2gpkg-web-service:"+version.toString())
+    images.add("sogis/vsa2gpkg-web-service:latest")
+    labels = ["vsa2gpkg-web-service.created": new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()), 
+            "vsa2gpkg-web-service.git_commit": getCheckedOutGitCommitHash(), 
+            "vsa2gpkg-web-service.build": version.toString()]
+}
+
+/*
+task createDockerContainer(dependsOn: 'buildDockerImage', type: DockerCreateContainer) {
+    description = "Create docker container."
+    targetImageId buildDockerImage.getImageId() 
+    hostConfig.portBindings = ['8080:8080']
+    exposedPorts = [new ExposedPort("tcp", [8080])]
+}
+
+task startDockerContainer(dependsOn: 'createDockerContainer', type: DockerStartContainer) { 
+    description = "Start docker container."
+    targetContainerId createDockerContainer.getContainerId() 
+
+    // Starting container != web service is ready.
+    doLast { 
+        sleep(10*1000)
+    }
+}
+
+task stopDockerContainer(type: DockerStopContainer) {
+    description = "Stop running docker container."
+    targetContainerId createDockerContainer.getContainerId()
+}
+*/
+
+// TODO: since images is a set, we do not need a loop anymore.
+def tags = ["latest", version]
+
+tags.each { tag ->
+    def imageTag = tag.toString()
+    task "pushDockerImage_$imageTag"(type: DockerPushImage) {
+        description = "Push docker image to hub.docker.com: $imageTag"
+        images = ["sogis/vsa2gpkg-web-service:$imageTag"]
+    }
+}
+
+task pushDockerImages() {
+    description = "Push docker images to hub.docker.com."
+    dependsOn {
+        tasks.findAll { task -> task.name.startsWith('pushDockerImage_') }
+    }    
+}
+
+/*
+dockerTest.dependsOn('startDockerContainer')
+dockerTest.finalizedBy('stopDockerContainer')
+*/
+
+def getCheckedOutGitCommitHash() {
+    'git log -1 --pretty=%H'.execute().text.trim()
+}
+
+task versionTxt()  {
+    outputs.upToDateWhen { false }
+    doLast {
+        new File("version.txt").text = """
+Version: $version
+Revision: ${getCheckedOutGitCommitHash()}
+Buildtime: ${new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date())}
+Application-name: ili2gpkg-web-service
+"""
+    }
+}
+task copyVersionTxt(type: Copy) {
+    from "version.txt"
+    into "src/main/resources/static/"
+}
+copyVersionTxt.dependsOn(versionTxt)
+build.dependsOn(copyVersionTxt)
+classes.dependsOn(copyVersionTxt)
+

@@ -25,36 +25,6 @@ public class Ili2gpkgService {
     public synchronized void importData(String inputFileName) throws Ili2dbException {
         String tempDirectory = FilenameUtils.getFullPath(inputFileName);
         String baseName = FilenameUtils.getBaseName(inputFileName);
-
-//        {
-//            Config settings = createConfig();
-//            
-//            settings.setFunction(Config.FC_IMPORT);
-//            settings.setModels(DATA_MODEL_NAME + ";" + VALIDATOR_MODEL_NAME);        
-//            settings.setModeldir("https://vsa.ch/models;" + Validator.SETTING_DEFAULT_ILIDIRS);
-//            settings.setItfTransferfile(false);
-//            
-//            settings.setDoImplicitSchemaImport(true);
-//            settings.setDefaultSrsCode("2056");
-//            settings.setNameOptimization(settings.NAME_OPTIMIZATION_TOPIC);
-//            Config.setStrokeArcs(settings, Config.STROKE_ARCS_ENABLE);
-//            settings.setCreateEnumDefs(Config.CREATE_ENUM_DEFS_MULTI); 
-//            settings.setTidHandling(Config.TID_HANDLING_PROPERTY);
-//            settings.setImportTid(true);
-//            settings.setImportBid(true);
-//            
-//            settings.setValidation(false);
-//            settings.setSqlNull(Config.SQL_NULL_ENABLE);
-//            settings.setSkipGeometryErrors(true);
-//            settings.setSkipReferenceErrors(true);            
-//
-//            String gpkgFileName = inputFileName.substring(0, inputFileName.length()-4) + ".gpkg";
-//            settings.setDbfile(gpkgFileName);        
-//            settings.setDburl("jdbc:sqlite:" + settings.getDbfile());
-//            
-//            settings.setXtffile(inputFileName);
-//            Ili2db.run(settings, null);
-//        }
         
         Config settings = createConfig();
         

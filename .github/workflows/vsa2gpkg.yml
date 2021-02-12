@@ -18,7 +18,13 @@ jobs:
         with:
           java-version: 11
       - name: Build with Gradle
-        run: ./gradlew clean build
+        run: ./gradlew clean build buildDockerImage pushDockerImages
+        if: ${{ github.ref == 'refs/heads/master' }}  
+        env:
+          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+          DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
+          GITHUB_RUN_NUMBER: ${{ github.run_number }}
+
       #   run: ./gradlew clean build dockerTest 
       # - name: ls
       #   #run: ./gradlew clean build pullDockerImage dockerTest --fail-fast -x test
