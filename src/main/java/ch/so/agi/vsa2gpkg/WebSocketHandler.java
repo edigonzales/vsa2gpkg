@@ -90,41 +90,45 @@ public class WebSocketHandler extends AbstractWebSocketHandler {
 
             session.sendMessage(new TextMessage("Received: " + filename));        
             
-            // Daten validierten.
-            session.sendMessage(new TextMessage("Validating..."));
-            
-            boolean valid;
-            try {
-                valid = ilivalidator.validate(copiedFile.toFile().getAbsolutePath());
-            } catch (IOException | IoxException e) {
-                session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while validating the data.</span></br></br>"));
-                sessionFileMap.remove(session.getId());
-                return;
+            // TODO: Ask Claude.
+            synchronized(this) {
+                // Daten validieren.
+                session.sendMessage(new TextMessage("Validating..."));
+                
+                boolean valid;
+                try {
+                    valid = ilivalidator.validate(copiedFile.toFile().getAbsolutePath());
+                } catch (IOException | IoxException e) {
+                    session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while validating the data.</span></br></br>"));
+                    sessionFileMap.remove(session.getId());
+                    return;
+                }
+                
+                String resultText = "<span style='background-color:#58D68D;'>...validation done.</span>";
+                if (!valid) {
+                    resultText = "<span style='background-color:#EC7063'>...validation failed.</span>";
+                }
+    
+                TextMessage resultMessage = new TextMessage(resultText);
+                session.sendMessage(resultMessage);
+    
+                // Daten (inkl. Fehler-Logdatei) in eine GeoPackage-Datei importieren.
+                session.sendMessage(new TextMessage("Importing..."));
+                
+                try {
+                    ili2gpkg.importData(copiedFile.toFile().getAbsolutePath());
+                    
+                    resultText = "<span style='background-color:#58D68D'>...import done.</span>";
+                    resultMessage = new TextMessage(resultText);
+                    session.sendMessage(resultMessage);
+                } catch (Ili2dbException e) {
+                    session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while importing the data.</span>"+e.getMessage()+"</br></br>"));
+                    //sessionFileMap.remove(session.getId());
+                    //return;
+                }
+                
             }
-            
-            String resultText = "<span style='background-color:#58D68D;'>...validation done.</span>";
-            if (!valid) {
-                resultText = "<span style='background-color:#EC7063'>...validation failed.</span>";
-            }
-
-            TextMessage resultMessage = new TextMessage(resultText);
-            session.sendMessage(resultMessage);
-
-            // Daten (inkl. Fehler-Logdatei) in eine GeoPackage-Datei importieren.
-            session.sendMessage(new TextMessage("Importing..."));
-            
-            try {
-                ili2gpkg.importData(copiedFile.toFile().getAbsolutePath());
-            } catch (Ili2dbException e) {
-                session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while importing the data.</span></br></br>"));
-                sessionFileMap.remove(session.getId());
-                return;
-            }
-            
-            resultText = "<span style='background-color:#58D68D'>...import done.</span>";
-            resultMessage = new TextMessage(resultText);
-            session.sendMessage(resultMessage);
-            
+                
             // Kopieren des vordefinierten QGIS-Projekt in die GeoPackage-Datei.
             Resource resource = resourceLoader.getResource("classpath:qgs/datenkontrolle.qgs");
             InputStream inputStream = resource.getInputStream();
@@ -211,7 +215,7 @@ public class WebSocketHandler extends AbstractWebSocketHandler {
         } catch (IOException e) {
             e.printStackTrace();
             sessionFileMap.remove(session.getId());
-            session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while proccessing the data.</span></br></br>"));
+            session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while proccessing the data.</span>"+e.getMessage()+"</br></br>"));
         }
 
     }

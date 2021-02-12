@@ -1,6 +1,5 @@
 package ch.so.agi.vsa2gpkg;
 
-import java.io.IOException;
 import java.nio.file.Paths;
 
 import org.apache.commons.io.FilenameUtils;
@@ -13,7 +12,6 @@ import ch.ehi.ili2db.base.Ili2db;
 import ch.ehi.ili2db.base.Ili2dbException;
 import ch.ehi.ili2db.gui.Config;
 import ch.ehi.ili2gpkg.GpkgMain;
-import ch.interlis.iox.IoxException;
 
 @Service
 public class Ili2gpkgService {
@@ -22,7 +20,7 @@ public class Ili2gpkgService {
     private String DATA_MODEL_NAME = "VSADSSMINI_2020_LV95";
     private String VALIDATOR_MODEL_NAME = "IliVErrors";
 
-    public synchronized void importData(String inputFileName) throws Ili2dbException {
+    public void importData(String inputFileName) throws Ili2dbException {
         String tempDirectory = FilenameUtils.getFullPath(inputFileName);
         String baseName = FilenameUtils.getBaseName(inputFileName);
         

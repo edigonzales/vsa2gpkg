@@ -30,7 +30,7 @@ public class IlivalidatorService {
     
     private String CONFIG_FILE_NAME = "vsadssmini_2020_lv95.toml";
         
-    public synchronized boolean validate(String inputFileName) throws IoxException, IOException {
+    public boolean validate(String inputFileName) throws IoxException, IOException {
         String tempDirectory = FilenameUtils.getFullPath(inputFileName);
         String baseName = FilenameUtils.getBaseName(inputFileName);
         String logFileName = Paths.get(tempDirectory, baseName + ".log").toFile().getAbsolutePath();
