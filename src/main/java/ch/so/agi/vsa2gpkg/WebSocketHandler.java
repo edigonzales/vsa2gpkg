@@ -63,6 +63,8 @@ public class WebSocketHandler extends AbstractWebSocketHandler {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     private static String FOLDER_PREFIX = "vsa2gpkg_";
+    private static String GREEN_HEX_COLOR = "#58D68D";
+    private static String RED_HEX_COLOR = "#EC7063"; 
     
     @Autowired
     private IlivalidatorService ilivalidator;
@@ -99,14 +101,16 @@ public class WebSocketHandler extends AbstractWebSocketHandler {
                 try {
                     valid = ilivalidator.validate(copiedFile.toFile().getAbsolutePath());
                 } catch (IOException | IoxException e) {
-                    session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while validating the data.</span></br></br>"));
+                    session.sendMessage(new TextMessage("<span style='background-color:"+RED_HEX_COLOR+";'>An error occured while validating the data.</span></br></br>"));
                     sessionFileMap.remove(session.getId());
+                    sendZip(session, copiedFile.toFile());
+                    FileUtils.deleteDirectory(new File(tempDir));
                     return;
                 }
                 
-                String resultText = "<span style='background-color:#58D68D;'>...validation done.</span>";
+                String resultText = "<span style='background-color:"+GREEN_HEX_COLOR+";'>...validation done.</span>";
                 if (!valid) {
-                    resultText = "<span style='background-color:#EC7063'>...validation failed.</span>";
+                    resultText = "<span style='background-color:"+RED_HEX_COLOR+";'>...validation failed.</span>";
                 }
     
                 TextMessage resultMessage = new TextMessage(resultText);
@@ -118,103 +122,78 @@ public class WebSocketHandler extends AbstractWebSocketHandler {
                 try {
                     ili2gpkg.importData(copiedFile.toFile().getAbsolutePath());
                     
-                    resultText = "<span style='background-color:#58D68D'>...import done.</span>";
+                    resultText = "<span style='background-color:"+GREEN_HEX_COLOR+";'>...import done.</span>";
                     resultMessage = new TextMessage(resultText);
                     session.sendMessage(resultMessage);
+                    
+                    // Kopieren des vordefinierten QGIS-Projekt in die GeoPackage-Datei.
+                    Resource resource = resourceLoader.getResource("classpath:qgs/datenkontrolle.qgs");
+                    InputStream inputStream = resource.getInputStream();
+
+                    File qgsFile = new File(Paths.get(tempDir, "datenkontrolle.qgs").toFile().getAbsolutePath());
+                    Files.copy(inputStream, qgsFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                    inputStream.close();
+
+                    session.sendMessage(new TextMessage("Updating..."));
+
+                    String baseName = FilenameUtils.getBaseName(copiedFile.toFile().getAbsolutePath());
+                    String gpkgFileName = Paths.get(tempDir, baseName + ".gpkg").toFile().getAbsolutePath();
+                    
+                    String oldFileContent = new String(Files.readAllBytes(qgsFile.toPath()), StandardCharsets.UTF_8);
+                    String newFileContent = oldFileContent.replaceAll("./VSADSSMINI2020.gpkg", "./" + baseName + ".gpkg");
+                    FileWriter writer = new FileWriter(qgsFile);
+                    writer.write(newFileContent);
+                    writer.close();
+
+                    // QGS -> QGZ
+                    FileOutputStream fos = new FileOutputStream(Paths.get(tempDir, "datenkontrolle.qgz").toFile().getAbsolutePath());
+                    ZipOutputStream zipOut = new ZipOutputStream(fos);
+                    FileInputStream fis = new FileInputStream(qgsFile);
+                    ZipEntry zipEntry = new ZipEntry(qgsFile.getName());
+                    zipOut.putNextEntry(zipEntry);
+                    byte[] bytes = new byte[1024];
+                    int length;
+                    while ((length = fis.read(bytes)) >= 0) {
+                        zipOut.write(bytes, 0, length);
+                    }
+                    zipOut.close();
+                    fis.close();
+                    fos.close();
+
+                    byte[] content = Files.readAllBytes(Paths.get(tempDir, "datenkontrolle.qgz"));
+                    
+                    String url = "jdbc:sqlite:" + gpkgFileName;
+                    try (Connection conn = DriverManager.getConnection(url); Statement stmt = conn.createStatement()) {
+                        stmt.execute("CREATE TABLE qgis_projects(name TEXT PRIMARY KEY, metadata BLOB, content BLOB)");
+
+                        String name = "datenkontrolle";
+                        DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
+                        String formattedDate = formatter.format(LocalDateTime.now());
+                        String metadata = "{\"last_modified_time\": \"" + formattedDate
+                                + "\", \"last_modified_user\": \"ili2gpkg\" }";
+
+                        String sql = "INSERT INTO qgis_projects (name,metadata,content) VALUES ('" + name + "', '" + metadata
+                                + "', '" + byteArrayToHex(content) + "')";
+                        stmt.execute(sql);
+                        session.sendMessage(new TextMessage("<span style='background-color:"+GREEN_HEX_COLOR+";'>...update done.</span><br/><br/>"));
+                    } catch (SQLException e) {
+                        session.sendMessage(new TextMessage("<span style='background-color:"+RED_HEX_COLOR+";'>...update failed.</span><br/><br/>"));
+                    }
+
                 } catch (Ili2dbException e) {
-                    session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while importing the data.</span>"+e.getMessage()+"</br></br>"));
+                    session.sendMessage(new TextMessage("<span style='background-color:"+RED_HEX_COLOR+";'>An error occured while importing the data.</span>"+e.getMessage()+"</br></br>"));
                     //sessionFileMap.remove(session.getId());
                     //return;
                 }
-            }
                 
-            // Kopieren des vordefinierten QGIS-Projekt in die GeoPackage-Datei.
-            Resource resource = resourceLoader.getResource("classpath:qgs/datenkontrolle.qgs");
-            InputStream inputStream = resource.getInputStream();
-
-            File qgsFile = new File(Paths.get(tempDir, "datenkontrolle.qgs").toFile().getAbsolutePath());
-            Files.copy(inputStream, qgsFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-            inputStream.close();
-
-            // Man muss zusätzlich den Namen der GPKG-Datei in der QGIS-Projektdatei
-            // ersetzen. Die erstellte GPKG-Datei
-            // heisst nicht immer gleich.
-            session.sendMessage(new TextMessage("Updating..."));
-
-            String baseName = FilenameUtils.getBaseName(copiedFile.toFile().getAbsolutePath());
-            String gpkgFileName = Paths.get(tempDir, baseName + ".gpkg").toFile().getAbsolutePath();
-            
-            String oldFileContent = new String(Files.readAllBytes(qgsFile.toPath()), StandardCharsets.UTF_8);
-            String newFileContent = oldFileContent.replaceAll("./VSADSSMINI2020.gpkg", "./" + baseName + ".gpkg");
-            FileWriter writer = new FileWriter(qgsFile);
-            writer.write(newFileContent);
-            writer.close();
-
-            // QGS -> QGZ
-            FileOutputStream fos = new FileOutputStream(Paths.get(tempDir, "datenkontrolle.qgz").toFile().getAbsolutePath());
-            ZipOutputStream zipOut = new ZipOutputStream(fos);
-            FileInputStream fis = new FileInputStream(qgsFile);
-            ZipEntry zipEntry = new ZipEntry(qgsFile.getName());
-            zipOut.putNextEntry(zipEntry);
-            byte[] bytes = new byte[1024];
-            int length;
-            while ((length = fis.read(bytes)) >= 0) {
-                zipOut.write(bytes, 0, length);
-            }
-            zipOut.close();
-            fis.close();
-            fos.close();
-
-            byte[] content = Files.readAllBytes(Paths.get(tempDir, "datenkontrolle.qgz"));
-            
-            String url = "jdbc:sqlite:" + gpkgFileName;
-            try (Connection conn = DriverManager.getConnection(url); Statement stmt = conn.createStatement()) {
-                stmt.execute("CREATE TABLE qgis_projects(name TEXT PRIMARY KEY, metadata BLOB, content BLOB)");
-
-                String name = "datenkontrolle";
-                DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
-                String formattedDate = formatter.format(LocalDateTime.now());
-                String metadata = "{\"last_modified_time\": \"" + formattedDate
-                        + "\", \"last_modified_user\": \"ili2gpkg\" }";
-
-                String sql = "INSERT INTO qgis_projects (name,metadata,content) VALUES ('" + name + "', '" + metadata
-                        + "', '" + byteArrayToHex(content) + "')";
-                stmt.execute(sql);
-                session.sendMessage(new TextMessage("<span style='background-color:#58D68D;'>...update done.</span><br/><br/>"));
-            } catch (SQLException e) {
-                session.sendMessage(new TextMessage("<span style='background-color:#EC7063;'>...update failed.</span><br/><br/>"));
                 sessionFileMap.remove(session.getId());
+                sendZip(session, copiedFile.toFile());
                 FileUtils.deleteDirectory(new File(tempDir));
-                return;
             }
-            
-            // Alles zippen und an Client senden.
-            File zipFile = Paths.get(tempDir, baseName + ".zip").toFile();
-           
-            List<File> filesToAdd = new ArrayList<File>();
-            for (String fileName : new File(tempDir).list()) {
-                if (fileName.contains("gpkg") || fileName.contains("log")) {
-                    filesToAdd.add(Paths.get(tempDir, fileName).toFile());
-                }
-            }
-            
-            if (filesToAdd.size() == 0) {
-                session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured: No files found to zip.</span></br></br>"));
-                sessionFileMap.remove(session.getId());
-                FileUtils.deleteDirectory(new File(tempDir));
-                return;
-            }
-            
-            new ZipFile(zipFile).addFiles(filesToAdd);
-            byte[] fileContent = Files.readAllBytes(zipFile.toPath());
-            session.sendMessage(new BinaryMessage(fileContent));
-            
-            sessionFileMap.remove(session.getId());
-            //FileUtils.deleteDirectory(new File(tempDirectory));
         } catch (IOException e) {
             e.printStackTrace();
             sessionFileMap.remove(session.getId());
-            session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured while proccessing the data.</span>"+e.getMessage()+"</br></br>"));
+            session.sendMessage(new TextMessage("<span style='background-color:"+RED_HEX_COLOR+"'>An error occured while proccessing the data.</span>"+e.getMessage()+"</br></br>"));
         }
 
     }
@@ -235,6 +214,34 @@ public class WebSocketHandler extends AbstractWebSocketHandler {
         File file = uploadFilePath.toFile();
         
         sessionFileMap.put(session.getId(), file);
+    }
+    
+    private void sendZip(WebSocketSession session, File file) throws IOException {
+        String tempDir = file.getParent();
+        String baseName = FilenameUtils.getBaseName(file.getAbsolutePath());
+        
+        File zipFile = Paths.get(tempDir, baseName + ".zip").toFile();
+       
+        List<File> filesToAdd = new ArrayList<File>();
+        for (String fileName : new File(tempDir).list()) {
+            if (fileName.contains("gpkg") || fileName.contains("log")) {
+                filesToAdd.add(Paths.get(tempDir, fileName).toFile());
+            }
+        }
+        
+        if (filesToAdd.size() == 0) {
+            session.sendMessage(new TextMessage("<span style='background-color:#EC7063'>An error occured: No files found to zip.</span></br></br>"));
+            sessionFileMap.remove(session.getId());
+            FileUtils.deleteDirectory(new File(tempDir));
+            return;
+        }
+        
+        new ZipFile(zipFile).addFiles(filesToAdd);
+        byte[] fileContent = Files.readAllBytes(zipFile.toPath());
+        session.sendMessage(new BinaryMessage(fileContent));
+        
+        //sessionFileMap.remove(session.getId());
+        //FileUtils.deleteDirectory(new File(tempDirectory));
     }
         
 	private static String byteArrayToHex(byte[] a) {
