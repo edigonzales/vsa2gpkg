@@ -22,7 +22,7 @@ Das Prüfresultat wird als gezippte Datei an den Browser zurückgeschickt:
 
 ![vsa2gpkg03](./images/vsa2gpkg03.png)
 
-Die entpackte Zipdatei enthält im Regelfall drei Dateien. Zwei Logfiles (normaler Text-Datei und INTERLIS-Datei) und eine GeoPackage-Datei. In der GeoPackage-Datei wurden die zu prüfenden Daten importiert und auch die allenfalls gefundenen Fehler. Es kann bei gewissen Fehlern vorkommen, dass die Daten nicht importiert werden können, z.B. falls die TID doppelt im Transferfile vorkommt. Ansonsten ist GeoPackage (SQlite) relativ tolerant und es wurden möglichst alle Datenbank-Constraint-Optionen der Importsoftware (*ili2gpkg*) ausgeschaltet. 
+Die entpackte Zipdatei enthält im Regelfall drei Dateien. Zwei Logfiles (normale Text-Datei und INTERLIS-Datei) und eine GeoPackage-Datei. In der GeoPackage-Datei wurden die zu prüfenden Daten importiert und auch die allenfalls gefundenen Fehler. Es kann bei gewissen Fehlern vorkommen, dass die Daten nicht importiert werden können, z.B. falls die TID doppelt im Transferfile vorkommt. Ansonsten ist GeoPackage (SQlite) relativ tolerant und es wurden möglichst alle Datenbank-Constraint-Optionen der Importsoftware (*ili2gpkg*) ausgeschaltet. 
 
 Die GeoPackage-Datei beinhaltet ebenfalls ein vorbereitete QGIS-Projektdatei, damit die Daten und Fehler einfach visuell dargestellt werden können. Es kann unter "Projects - Open From - GeoPackage" geöffnet werden:
 
