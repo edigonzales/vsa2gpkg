@@ -1,0 +1,13 @@
+version: '3'
+services:
+  vsa2gpkg:
+    image: sogis/vsa2gpkg-web-service:latest
+    ports:
+      - "8080:8080"
+    restart: always
+  gateway:
+    build: ./caddy/
+    image: sogis/vsa2gpkg-proxy:latest
+    restart: always
+    ports:
+      - "80:80"
